@@ -1,0 +1,41 @@
+.form__legend {
+  color: $green;
+  text-transform: uppercase;
+}
+
+.form__radio-list,
+.form__ckeckbox-list {
+  list-style: none;
+}
+
+.form__radio-text,
+.form__checkbox-text,
+.form__name {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+// BUG почему приходится отдельно задавать и нельзя плейсхолдеру
+.form__enter,
+.form__enter-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form__enter::placeholder,
+.form__enter-text::placeholder {
+  color: $input-text;
+}
+
+.form__enter-text {
+  border: 2px solid $grey-text;
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-text;
+}
