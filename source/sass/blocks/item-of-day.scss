@@ -1,0 +1,26 @@
+.item-of-day__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.item-of-day__sale {
+  color: $green;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.item-of-day__about,
+.item-of-day__detail,
+.item-of-day__description {
+  color: $grey-text;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.item-of-day__price {
+  font-weight: bold;
+  line-height: 24px;
+  color: $grey-text;
+}

@@ -1,0 +1,13 @@
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__info,
+.contacts__description,
+.contacts__description > a {
+  font-size: 14px;
+  line-height: 30px;
+  color: $grey-text;
+}

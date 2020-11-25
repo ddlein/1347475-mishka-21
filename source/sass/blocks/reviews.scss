@@ -1,0 +1,21 @@
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey-text;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.reviews__author-email > a {
+  color: $grey-text;
+}
