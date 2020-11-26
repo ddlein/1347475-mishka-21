@@ -1,6 +1,7 @@
 .form__legend {
   color: $green;
   text-transform: uppercase;
+  line-height: 16px;
 }
 
 .form__radio-list,
@@ -19,7 +20,7 @@
 // BUG почему приходится отдельно задавать и нельзя плейсхолдеру
 .form__enter,
 .form__enter-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: inherit;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;

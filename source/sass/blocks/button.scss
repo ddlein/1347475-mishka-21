@@ -6,6 +6,10 @@
   line-height: 20px;
   font-size: 18px;
   color: $grey-text;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
 }
-// BUG почему приходится отдельно задавать и нельзя плейсхолдеру
+
+.button--small-line-height {
+  line-height: 16px;
+}
+
