@@ -1,0 +1,26 @@
+.catalog {
+  list-style: none;
+}
+
+.catalog__item-title {
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  display: block;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
+.catalog__item-detail {
+  font-size: 13px;
+  line-height: 30px;
+  color: $grey-text;
+}
+
+.catalog__item-cost {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
