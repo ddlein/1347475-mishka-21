@@ -6,4 +6,9 @@
   line-height: 20px;
   font-size: 18px;
   color: $grey-text;
+  font-family: inherit;
+}
+
+.button--small-line-height {
+  line-height: 16px;
 }
