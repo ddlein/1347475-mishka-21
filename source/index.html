@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,12 +11,14 @@
 <body class="page__body">
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Mishka">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
       <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+        </a>
+        <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+        <a class="main-nav__link" href="#">Поиск по сайту</a>
+        <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -23,12 +26,8 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина</a>
-          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--new">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
@@ -36,8 +35,8 @@
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
+        <p class="main-nav__about-delivery">Бесплатная доставка по России</p>
       </div>
-      <p class="main-nav__about-delivery">Бесплатная доставка по России</p>
     </nav>
   </header>
   <main class="page-main">
@@ -113,10 +112,9 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
-        <!-- TODO исправлено значение div__review -list -->
         <div class="reviews__list">
-          <blockquote class="reviews__item">
-            <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+          <blockquote class="reviews__item visually-hidden">
+            <p class="reviews__text v">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
               такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
               и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
@@ -127,7 +125,7 @@
               <a href="mailto:@misssssiskras3">@misssssiskras3</a>
             </p>
           </blockquote>
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item visually-hidden">
             <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
               и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
@@ -139,7 +137,7 @@
             </p>
           </blockquote>
           <blockquote class="reviews__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            <p class="reviews__text ">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как
               у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке,

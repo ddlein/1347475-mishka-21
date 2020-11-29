@@ -1,7 +1,17 @@
+.reviews {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
 .reviews__title {
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .reviews__text {
@@ -18,4 +28,18 @@
 
 .reviews__author-email > a {
   color: $grey-text;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: $tablet-width;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

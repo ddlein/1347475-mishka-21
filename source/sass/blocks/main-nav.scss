@@ -1,5 +1,11 @@
+.main-nav__logo {
+  display: block;
+}
+
 .main-nav__list {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-nav__link {
@@ -8,4 +14,96 @@
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
+}
+
+@media (max-width: $mobil-width-only) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav__about-delivery {
+    display: none;
+  }
+
+  .main-nav__list--new {
+    display: none;
+  }
+
+  .main-nav__link {
+    order: 1;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    margin: auto;
+    width: 668px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    width: 300px;
+    display: flex;
+    margin: 0;
+  }
+
+  .main-nav__logo {
+    width: 100px;
+    margin-right: 180px;
+  }
+
+
+  .main-nav__list--new {
+    display: none;
+  }
+}
+
+// TODO font-size line-height исправить отдельным модификатором для table и desktop
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+
+  .main-nav__wrapper {
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .main-nav__logo {
+    order: 2;
+  }
+
+  .main-nav__link {
+    order: 3;
+  }
+
+  .main-nav__about-delivery {
+    order: 20;
+  }
+
+
+  .main-nav__list--new {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    order: 4;
+  }
 }
