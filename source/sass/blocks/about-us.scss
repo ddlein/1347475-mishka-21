@@ -50,3 +50,16 @@
     grid-auto-flow: column;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    margin-left: 161px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    width: $desktop-wrapper;
+    column-gap: 70px;
+  }
+}

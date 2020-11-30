@@ -1,3 +1,8 @@
+.item-of-day {
+  width: $mobile-wrapper;
+  margin: auto;
+}
+
 .item-of-day__title {
   font-weight: bold;
   font-size: 25px;
@@ -9,6 +14,11 @@
   text-transform: uppercase;
   font-weight: bold;
   line-height: 20px;
+}
+
+.item-of-day__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .item-of-day__about,
@@ -23,11 +33,21 @@
   font-weight: bold;
   line-height: 24px;
   color: $grey-text;
+  margin-left: 66px;
+}
+
+.item-of-day__wrapper .button {
+  margin-left: 76px;
 }
 
 @media (min-width: $tablet-width) {
+  .item-of-day {
+    margin: 0;
+  }
+
   .item-of-day__wrapper {
     width: 668px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 110px;
     grid-template-rows: min-content 1fr 1fr;
@@ -78,7 +98,7 @@
     width: 1050px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 110px 280px 1fr;
+    grid-template-columns: 186px 280px 1fr;
     grid-template-rows: 70px 140px 1fr;
   }
 

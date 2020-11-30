@@ -113,8 +113,8 @@
       <div class="reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list">
-          <blockquote class="reviews__item visually-hidden">
-            <p class="reviews__text v">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+          <blockquote class="reviews__item">
+            <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
               такого
               количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
               и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
@@ -136,7 +136,7 @@
               <a href="mailto:@misssssiskras2">@misssssiskras2</a>
             </p>
           </blockquote>
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item  visually-hidden">
             <p class="reviews__text ">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как
               у популярных инстамамочек.
@@ -149,8 +149,10 @@
             </p>
           </blockquote>
         </div>
-        <button class="reviews__button-left"></button>
-        <button class="reviews__button-right"></button>
+        <div class="reviews__buttons">
+          <button class="reviews__button-left" aria-label="Назад">Назад</button>
+          <button class="reviews__button-right" aria-label="Вперед">Вперед</button>
+        </div>
         <a class="reviews__write button" href="#">Написать</a>
       </div>
     </section>
@@ -171,7 +173,7 @@
       <div class="contacts__maps">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65202987874744!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602443873777!5m2!1sru!2sru"
-          width="600" height="416" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          width="320" height="454" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <img src="https://via.placeholder.com/320x455" width="320" height="455" alt="Карта">
       </div>
       <a class="contacts__write button" href="#">Напишите нам</a>
@@ -179,26 +181,27 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Мишка">
+      <div class="page-footer__img-wrapper">
+        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Мишка">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-
   </footer>
 
 
