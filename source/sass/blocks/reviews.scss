@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.reviews__item:nth-child(n+2) {
+  display: none;
+}
+
 .reviews__item {
   margin: 0;
   padding: 0;
@@ -41,10 +45,16 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: $tablet-width;
+    width: $tablet-wrapper;
     margin: 0;
     margin-top: 50px;
     padding: 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: 23px;
   }
 
   .reviews__wrapper {
@@ -78,7 +88,7 @@
 
   .reviews__write {
     position: absolute;
-    right: 131px;
+    right: 31px;
     top: 10px;
   }
 }

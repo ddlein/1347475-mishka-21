@@ -5,10 +5,8 @@
   margin-top: 40px;
 }
 
-@media (max-width: $mobil-width-only) {
-  .page-footer__img-wrapper {
-    display: none;
-  }
+.page-footer__img-wrapper {
+  display: none;
 }
 
 .social__list {
@@ -22,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__img-wrapper {
+    display: block;
+  }
+
   .page-footer__wrapper {
     width: $tablet-wrapper;
     margin: auto;

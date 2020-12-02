@@ -14,41 +14,44 @@
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
+  order: 1;
 }
 
-@media (max-width: $mobil-width-only) {
-  .main-nav__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .main-nav__about-delivery {
-    display: none;
-  }
+.main-nav__about-delivery {
+  display: none;
+}
 
-  .main-nav__list--new {
-    display: none;
-  }
-
-  .main-nav__link {
-    order: 1;
-  }
+.main-nav__list--new {
+  display: none;
 }
 
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav__wrapper {
     display: flex;
     margin: auto;
     width: 668px;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
 
   .main-nav__list {
     width: 300px;
@@ -61,30 +64,37 @@
     margin-right: 180px;
   }
 
-
   .main-nav__list--new {
     display: none;
   }
 }
-
-// TODO font-size line-height исправить отдельным модификатором для table и desktop
 
 @media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;
   }
 
+  .main-nav__item a {
+    font-size: 17px;
+    line-height: 24px;
+  }
 
   .main-nav__wrapper {
     width: 1050px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .main-nav__list {
     display: flex;
     justify-content: space-between;
     order: 1;
+  }
+
+  .main-nav__list--new a {
+    font-size: 15px;
+    line-height: 24px;
   }
 
   .main-nav__logo {
@@ -98,7 +108,6 @@
   .main-nav__about-delivery {
     order: 20;
   }
-
 
   .main-nav__list--new {
     display: flex;
