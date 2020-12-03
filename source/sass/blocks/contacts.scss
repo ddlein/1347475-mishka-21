@@ -7,7 +7,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-left: 160px;
+  margin: auto;
+  width: $mobile-wrapper;
 }
 
 .contacts__info,
@@ -54,7 +55,8 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    margin-left: 50px;
+    // margin-left: 125px;
+    width: $tablet-wrapper;
   }
 
   .contacts__description {
@@ -93,7 +95,7 @@
   .contacts {
     width: $desktop-wrapper;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 519px 1fr;
     grid-template-rows: auto 1fr min-content;
   }
 
@@ -120,6 +122,7 @@
     margin-left: 177px;
     margin-top: 78px;
     margin-bottom: 0;
+    width: 300px;
   }
 
   .contacts__wrapper {
@@ -128,6 +131,8 @@
     grid-template-columns: auto auto;
     column-gap: 30px;
     justify-content: center;
+    width: 300px;
+    margin-left: 182px;
   }
 
   .contacts__write {

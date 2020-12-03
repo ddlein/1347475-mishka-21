@@ -47,7 +47,7 @@
   }
 
   .item-of-day__wrapper {
-    width: &tablet-wrapper;
+    // width: $tablet-wrapper;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 110px;

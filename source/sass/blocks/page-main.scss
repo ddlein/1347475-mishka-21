@@ -42,8 +42,13 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 668px;
+    // width: 668px;
     margin: 0 auto;
+  }
+
+  .page-main__wrapper {
+    width: $tablet-wrapper;
+    margin: auto;
   }
 
   .page-main__nav-link {
@@ -54,6 +59,8 @@
   .page-main__nav-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: $tablet-wrapper;
+    margin: auto;
   }
 }
 
@@ -61,5 +68,15 @@
   .page-main {
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .page-main__nav-list {
+    width: $desktop-wrapper;
+    margin: auto;
+  }
+
+  .page-main__wrapper {
+    width: $desktop-wrapper;
+    margin: auto;
   }
 }
