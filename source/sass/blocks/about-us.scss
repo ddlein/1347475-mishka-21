@@ -51,14 +51,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    width: $desktop-wrapper;
+  }
+
   .about-us__title {
-    margin-left: 161px;
+    margin-left: 188px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .about-us__list {
-    width: $desktop-wrapper;
-    column-gap: 70px;
+    column-gap: 113px;
+    margin-left: 187px;
   }
 }

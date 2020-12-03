@@ -64,7 +64,13 @@
   .contacts__wrapper {
     width: $tablet-wrapper;
     grid-template-columns: 1fr 2fr 1fr 2fr;
-    // column-gap: 100px;
+  }
+
+  .contacts__info,
+  .contacts__description,
+  .contacts__description > a {
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__maps iframe {

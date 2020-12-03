@@ -42,8 +42,13 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    // width: 668px;
+    width: 668px;
     margin: 0 auto;
+  }
+
+  .page-main__nav-link {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .page-main__nav-list {

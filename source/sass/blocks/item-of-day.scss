@@ -95,6 +95,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .item-of-day {
+    width: $desktop-wrapper;
+  }
+
   .item-of-day__wrapper {
     width: 1050px;
     margin: 0 auto;
