@@ -47,6 +47,12 @@
   z-index: -1;
 }
 
+.contacts__write-wrapper {
+  width: $mobile-wrapper;
+  margin: auto;
+  margin-top: 20px;
+}
+
 .contacts__write {
   margin-left: 50px;
 }
@@ -84,10 +90,6 @@
     position: absolute;
     z-index: -1;
     top: 0;
-  }
-
-  .contacts__write {
-    margin-left: 223px;
   }
 }
 
@@ -133,6 +135,10 @@
     justify-content: center;
     width: 300px;
     margin-left: 182px;
+  }
+
+  .contacts__write-wrapper {
+    margin: 0 0 0 172px;
   }
 
   .contacts__write {
