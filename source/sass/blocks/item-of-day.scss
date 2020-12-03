@@ -42,11 +42,12 @@
 
 @media (min-width: $tablet-width) {
   .item-of-day {
-    margin: 0;
+    margin: auto;
+    width: $tablet-wrapper;
   }
 
   .item-of-day__wrapper {
-    width: 668px;
+    width: &tablet-wrapper;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 110px;

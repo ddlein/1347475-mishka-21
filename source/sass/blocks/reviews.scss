@@ -46,7 +46,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: $tablet-wrapper;
-    margin: 0;
+    margin: auto;
     margin-top: 50px;
     padding: 0;
   }
@@ -54,7 +54,7 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    margin-left: 23px;
+    // margin-left: 23px;
   }
 
   .reviews__wrapper {

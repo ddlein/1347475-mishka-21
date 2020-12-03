@@ -27,8 +27,7 @@
 @media (min-width: $tablet-width) {
   .about-us {
     width: $tablet-wrapper;
-    margin: 0;
-    margin-left: 20px;
+    margin: auto;
   }
 
   .about-us__title {
