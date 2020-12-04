@@ -1,8 +1,15 @@
+.page-main__wrapper {
+  // width: 260px;
+  background-color: $grey;
+}
+
 .page-main__title {
+  width: 260px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  background-color: $grey;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-main__nav-list {
@@ -31,4 +38,45 @@
 .page-main__text {
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    // width: 668px;
+    margin: 0 auto;
+  }
+
+  .page-main__wrapper {
+    width: $tablet-wrapper;
+    margin: auto;
+  }
+
+  .page-main__nav-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-main__nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: $tablet-wrapper;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .page-main__nav-list {
+    width: $desktop-wrapper;
+    margin: auto;
+  }
+
+  .page-main__wrapper {
+    width: $desktop-wrapper;
+    margin: auto;
+  }
 }

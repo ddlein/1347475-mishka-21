@@ -1,7 +1,14 @@
+.contacts {
+  margin: auto;
+  margin-top: 40px;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin: auto;
+  width: $mobile-wrapper;
 }
 
 .contacts__info,
@@ -10,4 +17,132 @@
   font-size: 14px;
   line-height: 30px;
   color: $grey-text;
+}
+
+.contacts__description address {
+  font-style: normal;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: $mobile-wrapper;
+  margin: auto;
+}
+
+.contacts__maps {
+  position: relative;
+}
+
+.contacts__maps iframe {
+  width: 100%;
+  height: 454px;
+  border: none;
+}
+
+.contacts__maps img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.contacts__write-wrapper {
+  width: $mobile-wrapper;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contacts__write {
+  margin-left: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    // margin-left: 125px;
+    width: $tablet-wrapper;
+  }
+
+  .contacts__description {
+    margin: 0;
+  }
+
+  .contacts__wrapper {
+    width: $tablet-wrapper;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+  }
+
+  .contacts__info,
+  .contacts__description,
+  .contacts__description > a {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__maps iframe {
+    width: 100%;
+    height: 457px;
+  }
+
+  .contacts__maps img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: $desktop-wrapper;
+    display: grid;
+    grid-template-columns: 519px 1fr;
+    grid-template-rows: auto 1fr min-content;
+  }
+
+  .contacts__maps {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+
+  .contacts__maps iframe {
+    width: 527px;
+    height: 457px;
+    margin-left: 0;
+  }
+
+  .contacts__maps img {
+    position: absolute;
+    z-index: -1;
+    left: 57px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 177px;
+    margin-top: 78px;
+    margin-bottom: 0;
+    width: 300px;
+  }
+
+  .contacts__wrapper {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    justify-content: center;
+    width: 300px;
+    margin-left: 182px;
+  }
+
+  .contacts__write-wrapper {
+    margin: 0 0 0 172px;
+  }
+
+  .contacts__write {
+    justify-self: center;
+    margin-left: 22px;
+  }
 }

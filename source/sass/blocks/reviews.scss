@@ -1,7 +1,21 @@
+.reviews {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+}
+
+.reviews__item:nth-child(n+2) {
+  display: none;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
 .reviews__title {
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .reviews__text {
@@ -12,10 +26,109 @@
 
 .reviews__author-name {
   font-style: normal;
-  font-weight: bold;
-  line-height: 24px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .reviews__author-email > a {
   color: $grey-text;
+  line-height: 24px;
+}
+
+.reviews__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__write {
+  margin-left: 74px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: $tablet-wrapper;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    // margin-left: 23px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews__author-email > a {
+    line-height: 30px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews__text {
+    grid-column: 1/3;
+    font-size: 17px;
+  }
+
+  .reviews__author-email {
+    grid-column: 1/2;
+  }
+
+  .reviews__button-left {
+    position: absolute;
+    right: 240px;
+    bottom: 23px;
+  }
+
+  .reviews__button-right {
+    position: absolute;
+    right: 140px;
+    bottom: 23px;
+  }
+
+  .reviews__write {
+    position: absolute;
+    right: 31px;
+    top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-wrapper;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 177px;
+  }
+
+  .reviews__item {
+    width: 875px;
+    margin-left: auto;
+  }
+
+  .reviews__author-name {
+    line-height: 30px;
+  }
+
+  .reviews__author-email > a {
+    line-height: 24px;
+  }
 }
