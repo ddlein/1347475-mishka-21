@@ -2,10 +2,10 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,7 +14,7 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html">
-          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka" />
+          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
         </a>
         <button class="main-nav__toggle" type="button">
           <span>Открыть меню</span>
@@ -54,108 +54,107 @@
       <div class="form__wrapper">
         <form method="get" action="#">
 
-          <fieldset class="form__fieldset">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset">
               <legend class="form__legend">Тип</legend>
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <input class="form__radio-button" type="radio" name="choose-type" value="accessories"
-                    id="accessories-check" checked />
+                    id="accessories-check" checked>
                   <label class="form__radio-text" for="accessories-check">Аксессуар для интерьера</label>
                 </li>
                 <li class="form__radio-item">
                   <input class="form__radio-button" type="radio" name="choose-type" value="child-toy"
-                    id="child-toy-check" />
-                  <label class="form__radio-text" for="child-toy-check-check">Детская игрушка</label>
+                    id="child-toy-check">
+                  <label class="form__radio-text" for="child-toy-check">Детская игрушка</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset form__fieldset--grey">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--grey">
+            <fieldset class="form__fieldset form__fieldset--grey">
               <legend class="form__legend">Цвет</legend>
               <ul class="form__ckeckbox-list">
                 <li class="form__checkbox-item">
                   <input class="form__checkbox-button" type="checkbox" name="choose-color" value="white"
-                    id="white-check" checked />
+                    id="white-check" checked>
                   <label class="form__checkbox-text" for="white-check">Белый</label>
                 </li>
                 <li class="form__checkbox-item">
                   <input class="form__checkbox-button" type="checkbox" name="choose-color" value="grey" id="grey-check"
-                    checked />
+                    checked>
                   <label class="form__checkbox-text" for="grey-check">Серый</label>
                 </li>
                 <li class="form__checkbox-item">
                   <input class="form__checkbox-button" type="checkbox" name="choose-color" value="tiffany"
-                    id="tiffany-check" />
+                    id="tiffany-check">
                   <label class="form__checkbox-text" for="tiffany-check">"Тиффани"</label>
                 </li>
                 <li class="form__checkbox-item">
                   <input class="form__checkbox-button" type="checkbox" name="choose-color" value="black"
-                    id="black-check" />
+                    id="black-check">
                   <label class="form__checkbox-text" for="black-check">Черный</label>
                 </li>
                 <li class="form__checkbox-item">
-                  <input class="form__checkbox-button" type="checkbox" name="choose-color" value="pink"
-                    id="pink-check" />
+                  <input class="form__checkbox-button" type="checkbox" name="choose-color" value="pink" id="pink-check">
                   <label class="form__checkbox-text" for="pink-check">Розовый</label>
                 </li>
                 <li class="form__checkbox-item">
                   <input class="form__checkbox-button" type="checkbox" name="choose-color" value="orange"
-                    id="orange-check" />
+                    id="orange-check">
                   <label class="form__checkbox-text" for="orange-check">Оранжевый</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset">
               <legend class="form__legend">ФИО</legend>
               <ul class="form__name-list">
                 <li class="form__name-item">
                   <label class="form__name" for="first-name">Имя:</label>
-                  <input class="form__enter" type="text" name="name" id="first-name" placeholder="Введите ваше имя*" />
+                  <input class="form__enter" type="text" name="name" id="first-name" placeholder="Введите ваше имя*">
                 </li>
                 <li class="form__name-item">
                   <label class="form__name" for="last-name">Фамилия:</label>
-                  <input class="form__enter" type="text" name="name" id="last-name" placeholder="Укажите фамилию*" />
+                  <input class="form__enter" type="text" name="name" id="last-name" placeholder="Укажите фамилию*">
                 </li>
                 <li class="form__name-item">
                   <label class="form__name" for="middle-name">Отчество:</label>
                   <input class="form__enter" type="text" name="name" id="middle-name"
-                    placeholder="Отчество, если желаете" />
+                    placeholder="Отчество, если желаете">
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--grey">
+            <fieldset class="form__fieldset">
               <legend class="form__legend">Тел</legend>
               <label class="visually-hidden" for="tel">Введите ваш телефон</label>
               <input class="form__enter form__enter-contacts" type="tel" name="tel" id="tel"
-                placeholder="+7 XXX XXX XX XX*" />
-            </div>
-          </fieldset>
+                placeholder="+7 XXX XXX XX XX*">
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <div class="form__fieldset-wrapper">
-              <legend class="form__legend" for="email">E-mail</legend>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--grey">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">E-mail</legend>
               <label class="visually-hidden" for="email">Введите ваш E-mail</label>
               <input class="form__enter form__enter-contacts" type="email" name="email" id="email"
-                placeholder="Ваш Email*" />
-            </div>
-          </fieldset>
+                placeholder="Ваш Email*">
+            </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset">
               <legend class="form__legend">Доп</legend>
               <textarea class="form__enter-text" name="wishes" id="textarea" cols="30" rows="10"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="form__send-wrapper">
             <p class="form__required">*Поля обязательны для заполнения</p>
             <button class="button button--small-line-height" type="submit">
@@ -169,7 +168,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__img-wrapper">
-        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Мишка" />
+        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Мишка">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
