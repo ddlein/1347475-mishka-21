@@ -1,12 +1,44 @@
-.form__legend {
-  color: $green;
-  text-transform: uppercase;
-  line-height: 16px;
+.form {
+  width: $mobile-wrapper;
+  margin: auto;
 }
 
 .form__radio-list,
 .form__ckeckbox-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__name-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form__radio-list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__legend {
+  color: $green;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+
+.form__radio-item {
+  margin-bottom: 15px;
 }
 
 .form__radio-text,
@@ -25,6 +57,12 @@
   line-height: 18px;
 }
 
+.form__enter {
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .form__enter::placeholder,
 .form__enter-text::placeholder {
   color: $input-text;
@@ -32,10 +70,140 @@
 
 .form__enter-text {
   border: 2px solid $grey-text;
+  width: $mobile-wrapper;
 }
 
 .form__required {
   font-size: 14px;
   line-height: 16px;
   color: $grey-text;
+}
+
+.form__checkbox-item {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 100%;
+  }
+
+  .form__fieldset {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    width: $tablet-wrapper;
+    margin: auto;
+  }
+
+  // TODO через модификатор
+  .form__fieldset-wrapper--grey {
+    background-color: $grey;
+  }
+
+  .form__radio-text,
+  .form__checkbox-text {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__legend {
+    margin: 0;
+  }
+
+  .form__radio-list,
+  .form__ckeckbox-list {
+    grid-column: 2/3;
+  }
+
+  .form__fieldset:nth-child(3) .form__fieldset-wrapper {
+    grid-template-columns: 183px 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .form__fieldset-wrapper:nth-child(4) input,
+  .form__fieldset-wrapper:nth-child(5) input {
+    grid-column: 2/3;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+
+  .form__fieldset-wrapper:nth-child(6) .form__enter-text {
+    grid-column: 2/3;
+    width: 501px;
+  }
+
+  .form__name-list {
+    grid-column: 2/3;
+    margin-top: -30px;
+  }
+
+  .form__name {
+    margin-right: 20px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__enter {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__enter-contacts {
+    background-color: $grey;
+  }
+
+  .form__fieldset:nth-child(5) {
+    margin-top: -20px;
+  }
+
+  .form__enter-text {
+    width: auto;
+  }
+
+  .form__send-wrapper {
+    display: flex;
+    width: $tablet-wrapper;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .form__required {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__ckeckbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    width: $desktop-form-wrapper;
+    margin: auto;
+  }
+
+  .form__ckeckbox-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .form__fieldset-wrapper:nth-child(6) .form__fieldset {
+    position: relative;
+  }
+
+  .form__send-wrapper {
+    position: relative;
+    left: 37px;
+    width: 700px;
+  }
+
+  .form__fieldset-wrapper:nth-child(6) .form__enter-text {
+    width: 700px;
+  }
 }
