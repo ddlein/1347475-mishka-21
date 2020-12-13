@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,31 +11,42 @@
 <body class="page__body">
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="/img/mishka-logo-mobile.svg" width="86"
+            height="35" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="/img/mishka-logo-tablet.svg" width="113"
+            height="46" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="/img/mishka-logo-desktop.svg" width="149"
+            height="72" alt="Логотип Mishka">
         </a>
-        <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-        <a class="main-nav__link" href="#">Поиск по сайту</a>
-        <a class="main-nav__link" href="#">Корзина: пока пуста</a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list main-nav__list--new">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <p class="main-nav__about-delivery">Бесплатная доставка по России</p>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper-toggle">
+          <div class="main-nav__site-nav-wrapper">
+
+
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--new">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="main-nav__about-delivery">Бесплатная доставка по России</p>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -204,6 +215,23 @@
     </div>
   </footer>
 
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    // navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 
 </body>
 
