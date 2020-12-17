@@ -5,6 +5,10 @@
 .page-main__wrapper {
   // width: 260px;
   background-color: $grey;
+  background-image: url("https://via.placeholder.com/320x282");
+  background-size: cover;
+  min-height: 282px;
+  background-repeat: no-repeat;
 }
 
 .page-main__wrapper--catalog {
@@ -29,6 +33,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  padding-top: 72px;
 }
 
 .page-main__title--catalog {
@@ -47,10 +52,22 @@
 
 .page-main__nav-item:nth-child(1) {
   background-color: $green;
+  padding-bottom: 20px;
+
+  & a {
+    padding-top: 26px;
+    padding-left: 30px;
+  }
 }
 
 .page-main__nav-item:nth-child(2) {
   background-color: $green-dark;
+
+  & a {
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-main__nav-link {
@@ -74,6 +91,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+    padding-top: 154px;
+  }
+
   .page-main__title--catalog {
     font-size: 43px;
     line-height: 50px;
@@ -85,11 +109,17 @@
 
   .page-main__wrapper {
     background-color: transparent;
+    width: $tablet-wrapper;
+    margin: auto;
+    margin-top: -65px;
+    min-height: 626px;
   }
 
   .page-main__nav-link {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 25px;
+    padding-left: 36px;
   }
 
   .page-main__nav-list {
@@ -97,6 +127,7 @@
     grid-template-columns: 1fr 1fr;
     width: $tablet-wrapper;
     margin: auto;
+    margin-bottom: 75px;
   }
 
   .page-main__text {
@@ -123,7 +154,9 @@
   }
 
   .page-main__wrapper {
-    // width: $desktop-wrapper;
+    width: $desktop-wrapper;
     margin: auto;
+    background-size: cover;
+    margin-top: -60px;
   }
 }
