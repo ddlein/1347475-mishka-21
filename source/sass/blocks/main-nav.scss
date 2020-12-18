@@ -62,7 +62,7 @@
     width: 21px;
     height: 20px;
 
-    background-image: url("../../img/menu-close.svg.png");
+    background-image: url("../img/menu-close.svg");
     background-repeat: no-repeat;
   }
 }
@@ -75,10 +75,13 @@
   left: 116px;
 
   width: 21px;
-  height: 2px;
+  height: 21px;
 
-  background-color: $black;
-  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  // background-color: $black;
+  // box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
 }
 
 .main-nav__list {
@@ -109,20 +112,6 @@
   margin-top: 17px;
   margin-left: -33px;
 
-  & + .main-nav__link {
-    margin-top: 36px;
-    margin-left: 12px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 5px;
-      margin-left: 108px;
-      padding-top: 0;
-
-      font-size: 17px;
-      line-height: 24px;
-    }
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -132,8 +121,22 @@
     width: 18px;
     height: 18px;
 
-    background-image: url("../../img/search.svg");
+    background-image: url("../img/search.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.main-nav__toggle + .main-nav__link + .main-nav__link {
+  margin-top: 36px;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    margin-left: 108px;
+    padding-top: 0;
+
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -257,7 +260,7 @@
     margin-left: 75px;
   }
 
-  .main-nav__item a {
+  .main-nav__item .main-nav__link {
     font-size: 17px;
     line-height: 24px;
   }
@@ -267,10 +270,10 @@
       top: -3px;
       left: -12px;
     }
+  }
 
-    & + .main-nav__link {
-      margin-left: 2px;
-    }
+  .main-nav__toggle + .main-nav__link + .main-nav__link {
+    margin-left: 2px;
   }
 
   .main-nav__wrapper {
@@ -287,7 +290,7 @@
     width: 376px;
     margin-top: -21px;
 
-    & .main-nav__item:nth-child(1) {
+    .main-nav__list .main-nav__item:nth-child(1) {
       margin-right: 34px;
     }
   }
@@ -313,7 +316,7 @@
     width: 330px;
     margin-top: -1px;
 
-    & .main-nav__item:nth-child(2) {
+    .main-nav__list--new .main-nav__item:nth-child(2) {
       margin-left: 29px;
     }
   }

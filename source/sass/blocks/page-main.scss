@@ -54,7 +54,7 @@
   background-color: $green;
   padding-bottom: 20px;
 
-  & a {
+  .page-main__nav-item:nth-child(1) a {
     padding-top: 26px;
     padding-left: 30px;
   }
@@ -63,7 +63,7 @@
 .page-main__nav-item:nth-child(2) {
   background-color: $green-dark;
 
-  & a {
+  .page-main__nav-item:nth-child(2) a {
     padding-top: 25px;
     padding-left: 30px;
     padding-bottom: 30px;
