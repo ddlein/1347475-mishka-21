@@ -53,21 +53,21 @@
 .page-main__nav-item:nth-child(1) {
   background-color: $green;
   padding-bottom: 20px;
+}
 
-  .page-main__nav-item:nth-child(1) a {
-    padding-top: 26px;
-    padding-left: 30px;
-  }
+.page-main__nav-item:nth-child(1) a {
+  padding-top: 26px;
+  padding-left: 30px;
 }
 
 .page-main__nav-item:nth-child(2) {
   background-color: $green-dark;
+}
 
-  .page-main__nav-item:nth-child(2) a {
-    padding-top: 25px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-  }
+.page-main__nav-item:nth-child(2) a {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 .page-main__nav-link {
