@@ -1,6 +1,7 @@
 .about-us {
   width: $mobile-wrapper;
   margin: auto;
+  margin-top: 73px;
 }
 
 .about-us__title {
@@ -13,10 +14,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 60px;
+  margin-left: -6px;
 }
 
 .about-us__item {
   padding: 5px;
+  margin-bottom: 39px;
 }
 
 .about-us__text {
@@ -33,6 +37,7 @@
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 126px;
   }
 
   .about-us__text {
@@ -47,6 +52,7 @@
     width: 668px;
     gap: 20px;
     grid-auto-flow: column;
+    margin-top: 72px;
   }
 }
 
@@ -56,13 +62,15 @@
   }
 
   .about-us__title {
-    margin-left: 188px;
     font-size: 53px;
     line-height: 57px;
+    margin-top: 165px;
+    margin-left: 175px;
   }
 
   .about-us__list {
-    column-gap: 113px;
-    margin-left: 187px;
+    column-gap: 29px;
+    margin-left: 172px;
+    margin-top: 69px;
   }
 }

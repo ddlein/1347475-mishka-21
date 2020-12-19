@@ -11,12 +11,17 @@
 <body class="page__body">
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
+            height="35" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="img/mishka-logo-tablet.svg" width="113"
+            height="46" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="img/mishka-logo-desktop.svg" width="149"
+            height="72" alt="Логотип Mishka">
         </a>
-        <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="main-nav__link" href="#">Поиск по сайту</a>
         <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         <ul class="main-nav__list">
@@ -64,7 +69,7 @@
         </p>
         <dl class="item-of-day__details">
           <dt class="item-of-day__detail">Цвет:</dt>
-          <dd class="item-of-day__description">"Тиффани"/серый</dd>
+          <dd class="item-of-day__description">«Тиффани»/серый</dd>
           <dt class="item-of-day__detail">Диаметр:</dt>
           <dd class="item-of-day__description">25 см</dd>
           <dt class="item-of-day__detail">Высота:</dt>
@@ -72,7 +77,7 @@
         </dl>
         <img src="https://via.placeholder.com/260x315" width="260" height="315" alt="Фото товара">
         <p class="item-of-day__price">Цена: 990руб.</p>
-        <a class="button" href="#">
+        <a class="button item-of-day__button" href="#">
           Заказать
         </a>
       </div>
@@ -166,7 +171,7 @@
         <dt class="contacts__info">Адрес</dt>
         <dd class="contacts__description">
           <address>г. Санкт-Петербург<br>
-            ул. Большая Конюшенная д. 19/8<br>
+            ул. Большая Конюшенная д. 19/8
             офис 101</address>
         </dd>
       </dl>
@@ -204,6 +209,23 @@
     </div>
   </footer>
 
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    // navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 
 </body>
 

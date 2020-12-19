@@ -7,6 +7,21 @@
   font-size: 18px;
   color: $grey-text;
   font-family: inherit;
+  margin-top: 7px;
+  margin-left: 0;
+  padding-left: 80px;
+  padding-right: 81px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-top: -15px;
+    padding-left: 99px;
+    padding-right: 100px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
 }
 
 .button--small-line-height {

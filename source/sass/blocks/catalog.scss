@@ -16,12 +16,6 @@
 
 .catalog__item {
   margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-rows: auto 3fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .catalog__item-detail {
@@ -39,6 +33,12 @@
 @media (min-width: $tablet-width) {
   .catalog__link {
     grid-row: 1/4;
+  }
+
+  .catalog__item {
+    display: grid;
+    grid-template-rows: auto 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .catalog__item-title {

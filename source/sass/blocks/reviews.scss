@@ -7,6 +7,10 @@
   display: none;
 }
 
+.reviews__list {
+  margin-top: -24px;
+}
+
 .reviews__item {
   margin: 0;
   padding: 0;
@@ -33,6 +37,7 @@
 .reviews__author-email > a {
   color: $grey-text;
   line-height: 24px;
+  margin-top: 4px;
 }
 
 .reviews__buttons {
@@ -41,35 +46,55 @@
 }
 
 .reviews__write {
-  margin-left: 74px;
+  // margin-left: 74px;
+  margin-left: -1px;
+  margin-top: 69px;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
+    width: 100%;
+    // margin: auto;
+    // margin-top: 50px;
+    padding: 0;
+    background-image: url("https://via.placeholder.com/350x457");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: 0;
+    padding-top: 1px;
+    padding-bottom: 50px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
     width: $tablet-wrapper;
     margin: auto;
-    margin-top: 50px;
-    padding: 0;
+    // background-image: url("https://via.placeholder.com/350x457");
+    // background-repeat: no-repeat;
+    // background-position: left;
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 104px;
     // margin-left: 23px;
+  }
+
+  .reviews__list {
+    margin-top: -14px;
   }
 
   .reviews__author-name {
     font-size: 18px;
     line-height: 24px;
+    margin-top: 45px;
   }
 
   .reviews__author-email > a {
     line-height: 30px;
   }
 
-  .reviews__wrapper {
-    position: relative;
-  }
 
   .reviews__item {
     display: grid;
@@ -81,8 +106,10 @@
     font-size: 17px;
   }
 
+
   .reviews__author-email {
     grid-column: 1/2;
+    margin-top: 2px;
   }
 
   .reviews__button-left {
@@ -99,18 +126,37 @@
 
   .reviews__write {
     position: absolute;
-    right: 31px;
-    top: 10px;
+    right: 0;
+    top: -72px;
+    padding-left: 30px;
+    padding-right: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     width: $desktop-wrapper;
+    background-position: left 29px;
+    padding-bottom: 84px;
   }
 
   .reviews__wrapper {
+    width: $desktop-wrapper;
     position: relative;
+  }
+
+  .reviews__text {
+    width: 838px;
+    margin-top: 6px;
+  }
+
+  .reviews__write {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 73px;
+    margin-bottom: 0;
+    padding-left: 37px;
+    padding-right: 39px;
   }
 
   .reviews__title {
@@ -126,6 +172,7 @@
 
   .reviews__author-name {
     line-height: 30px;
+    margin-top: 24px;
   }
 
   .reviews__author-email > a {

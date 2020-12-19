@@ -1,6 +1,6 @@
 .contacts {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 .contacts__title {
@@ -9,6 +9,7 @@
   line-height: 30px;
   margin: auto;
   width: $mobile-wrapper;
+  margin-bottom: 28px;
 }
 
 .contacts__info,
@@ -19,19 +20,28 @@
   color: $grey-text;
 }
 
+.contacts__info {
+  margin-bottom: 28px;
+}
+
+.contacts__description {
+  margin-left: 34px;
+}
+
 .contacts__description address {
   font-style: normal;
 }
 
 .contacts__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: min-content 1fr;
   width: $mobile-wrapper;
   margin: auto;
 }
 
 .contacts__maps {
   position: relative;
+  top: 34px;
 }
 
 .contacts__maps iframe {
@@ -51,9 +61,16 @@
   margin: auto;
   display: block;
   width: 160px;
+  margin-top: 71px;
+  padding-left: 47px;
+  padding-right: 46px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 133px;
+  }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -68,6 +85,7 @@
   .contacts__wrapper {
     width: $tablet-wrapper;
     grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin-top: 51px;
   }
 
   .contacts__info,
@@ -75,6 +93,10 @@
   .contacts__description > a {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .contacts__maps {
+    top: 46px;
   }
 
   .contacts__maps iframe {
@@ -86,6 +108,12 @@
     position: absolute;
     z-index: -1;
     top: 0;
+  }
+
+  .contacts__write {
+    margin-top: 98px;
+    padding-left: 35px;
+    padding-right: 27px;
   }
 }
 
@@ -100,6 +128,8 @@
   .contacts__maps {
     grid-row: 1/3;
     grid-column: 2/3;
+    top: 28px;
+    left: 3px;
   }
 
   .contacts__maps iframe {
@@ -117,8 +147,8 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 177px;
-    margin-top: 78px;
+    margin-left: 174px;
+    margin-top: 106px;
     margin-bottom: 0;
     width: 300px;
   }
@@ -130,10 +160,17 @@
     column-gap: 30px;
     justify-content: center;
     width: 300px;
-    margin-left: 182px;
+    margin-left: 174px;
+    margin-top: 36px;
   }
 
   .contacts__write {
     justify-self: center;
+    margin-top: -28px;
+    margin-left: 177px;
+  }
+
+  .contacts__description {
+    margin-left: -6px;
   }
 }
