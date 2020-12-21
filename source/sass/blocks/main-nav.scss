@@ -35,8 +35,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 26px;
-  right: 45px;
+  top: 30px;
+  right: 30px;
   width: 21px;
   height: 20px;
 
@@ -235,6 +235,11 @@
 
   .main-nav__item .main-nav__link {
     font-size: 17px;
+    line-height: 24px;
+  }
+
+  .main-nav__list--new .main-nav__link {
+    font-size: 15px;
     line-height: 24px;
   }
 

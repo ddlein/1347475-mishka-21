@@ -23,6 +23,17 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: $green-light;
+  //   width: 200px;
+  //   height: 1px;
+  //   right: 0;
+  //   bottom: 123px;
+  // }
 }
 
 .form__radio-list {
@@ -35,10 +46,27 @@
   text-transform: uppercase;
   line-height: 16px;
   margin-bottom: 15px;
+  font-weight: 700;
+  padding: 0;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $green-light;
+      width: 200px;
+      height: 1px;
+      right: 0;
+      left: 62px;
+      bottom: 123px;
+      top: 9px;
+    }
+  }
 }
 
 .form__radio-item {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .form__radio-text,
@@ -70,7 +98,7 @@
 
 .form__enter-text {
   border: 2px solid $grey-text;
-  width: $mobile-wrapper;
+  width: 256px;
 }
 
 .form__required {
@@ -81,6 +109,50 @@
 
 .form__checkbox-item {
   margin-bottom: 15px;
+}
+
+.form__button {
+  padding-left: 39px;
+  padding-right: 41px;
+}
+
+.form__name-item {
+  // box-shadow: 0 2px 0 0 $black;
+  padding-bottom: 1px;
+  padding-top: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 260px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    top: 84px;
+  }
+}
+
+.form__enter-contacts {
+  // TODO почему не как в навигации линии ведут себя???
+  box-shadow: 0 2px 0 0 $black;
+  padding-bottom: 5px;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 2px;
+  //   width: 260px;
+  //   background-color: $black;
+  // }
+}
+
+.form__fieldset-wrapper:nth-child(1) {
+  margin-top: 30px;
+}
+
+.form__fieldset-wrapper:nth-child(2) {
+  margin-top: 45px;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,7 +167,6 @@
     margin: auto;
   }
 
-  // TODO через модификатор
   .form__fieldset-wrapper--grey {
     background-color: $grey;
   }
@@ -129,7 +200,7 @@
 
   .form__fieldset-wrapper:nth-child(6) .form__enter-text {
     grid-column: 2/3;
-    width: 501px;
+    width: 492px;
   }
 
   .form__name-list {
@@ -156,10 +227,6 @@
     margin-top: -20px;
   }
 
-  .form__enter-text {
-    width: auto;
-  }
-
   .form__send-wrapper {
     display: flex;
     width: $tablet-wrapper;
@@ -179,6 +246,21 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
+  }
+
+  .form__name-list .form__name-item:nth-child(1) {
+    &::before {
+      left: 61px;
+      width: 428px;
+    }
+  }
+
+  .form__name-item {
+    &::before {
+      width: 375px;
+      left: 113px;
+      top: 58px;
+    }
   }
 }
 
@@ -203,7 +285,30 @@
     width: 700px;
   }
 
+  .form__enter-contacts {
+    width: 699px;
+  }
+
   .form__fieldset-wrapper:nth-child(6) .form__enter-text {
     width: 700px;
+  }
+
+  .form__button {
+    margin-top: 5px;
+  }
+
+  .form__name-list .form__name-item:nth-child(1) {
+    &::before {
+      left: 74px;
+      width: 626px;
+    }
+  }
+
+  .form__name-item {
+    &::before {
+      width: 573px;
+      left: 125px;
+      top: 58px;
+    }
   }
 }
