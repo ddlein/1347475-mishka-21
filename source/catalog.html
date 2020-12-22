@@ -10,14 +10,18 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
-        <a class="main-nav__logo" href="index.html">
-          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
+            height="35" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="img/mishka-logo-tablet.svg" width="113"
+            height="46" alt="Логотип Mishka">
+          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="img/mishka-logo-desktop.svg" width="149"
+            height="72" alt="Логотип Mishka">
         </a>
-        <button class="main-nav__toggle" type="button">
-          <span>Открыть меню</span>
-        </button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
+            class="visually-hidden">Открыть меню</span></button>
         <a class="main-nav__link" href="#">Поиск по сайту</a>
         <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         <ul class="main-nav__list">
@@ -67,7 +71,7 @@
             <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
           </a>
           <a class="catalog__item-title" href="#">Большая корзинка для игрушек</a>
-          <p class="catalog__item-detail">Диаметр 30см, высота 30 см</p>
+          <p class="catalog__item-detail">Диаметр 30 см, высота 30 см</p>
           <span class="catalog__item-cost">1 500 руб.</span>
           <a class="catalog__item-busket" href="#"></a>
         </li>
@@ -80,7 +84,7 @@
           <p class="process-making__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
           </p>
-          <a href="#" class="button button--small-line-height">Сделать заказ</a>
+          <a href="#" class="process-making__button button button--small-line-height">Сделать заказ</a>
         </div>
       </section>
     </div>
@@ -110,6 +114,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    // navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 
 </body>
 

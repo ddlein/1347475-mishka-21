@@ -1,6 +1,8 @@
 .process-making {
   width: $mobile-wrapper;
   margin: auto;
+  border: 1px solid $border-nav;
+  padding-bottom: 32px;
 }
 
 .process-making__title {
@@ -8,6 +10,12 @@
   font-size: 17px;
   width: 158px;
   margin: auto;
+  margin-top: 23px;
+  margin-left: 89px;
+}
+
+.process-making img {
+  margin-top: 26px;
 }
 
 .process-making__text {
@@ -16,12 +24,19 @@
   color: $grey-text;
   width: 226px;
   margin: auto;
+  margin-top: 31px;
+  margin-left: 32px;
 }
 
-.process-making a {
+.process-making__button {
   width: 158px;
   display: inline-block;
-  margin-left: 42px;
+  margin-left: 33px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-top: 41px;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,12 +45,19 @@
   }
 
   .process-making__title {
-    width: 226px;
+    width: 252px;
     grid-row: 2/3;
+    font-size: 20px;
+    margin-left: 107px;
+    margin-top: 39px;
   }
 
   .process-making__text {
-    width: 513px;
+    width: 583px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-top: 25px;
   }
 
   .process-making__wrapper {
@@ -43,9 +65,13 @@
     display: grid;
   }
 
-  .process-making__wrapper a {
+  .process-making__button {
     width: 543px;
     text-align: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-right: 19px;
+    padding-left: 20px;
   }
 
   .process-making__wrapper img {
@@ -59,6 +85,7 @@
   .process-making {
     width: $desktop-wrapper;
     margin: auto;
+    padding-bottom: 0;
   }
 
   .process-making__wrapper {
@@ -73,19 +100,28 @@
     grid-row: 1/-1;
   }
 
-  .process-making__wrapper a {
+  .process-making__button {
     width: 230px;
     text-align: center;
-    margin-left: 67px;
+    margin-left: 78px;
+    margin-bottom: 58px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 9px;
   }
 
   .process-making__title {
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 228px;
+    margin-top: 98px;
+    margin-left: 79px;
   }
 
   .process-making__text {
     width: 253px;
     grid-row: 2/3;
+    margin-left: 79px;
+    margin-top: 5px;
   }
 }

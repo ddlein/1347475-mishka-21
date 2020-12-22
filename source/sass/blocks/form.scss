@@ -122,13 +122,14 @@
   padding-top: 15px;
   position: relative;
 
-  &::before {
+  &::after {
     content: "";
     width: 260px;
     height: 2px;
     background-color: $black;
     position: absolute;
     top: 84px;
+    left: 0;
   }
 }
 
@@ -249,14 +250,14 @@
   }
 
   .form__name-list .form__name-item:nth-child(1) {
-    &::before {
+    &::after {
       left: 61px;
       width: 428px;
     }
   }
 
   .form__name-item {
-    &::before {
+    &::after {
       width: 375px;
       left: 113px;
       top: 58px;
