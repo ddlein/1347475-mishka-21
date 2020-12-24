@@ -1,17 +1,19 @@
 .process-making {
   width: $mobile-wrapper;
   margin: auto;
-  border: 1px solid $border-nav;
   padding-bottom: 32px;
+
+  border: 1px solid $border-nav;
 }
 
 .process-making__title {
-  line-height: 24px;
-  font-size: 17px;
   width: 158px;
   margin: auto;
   margin-top: 23px;
   margin-left: 89px;
+
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .process-making img {
@@ -19,24 +21,25 @@
 }
 
 .process-making__text {
-  font-size: 13px;
-  line-height: 24px;
-  color: $grey-text;
   width: 226px;
   margin: auto;
   margin-top: 31px;
   margin-left: 32px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey-text;
 }
 
 .process-making__button {
-  width: 158px;
   display: inline-block;
-  margin-left: 33px;
-  padding-left: 20px;
-  padding-right: 10px;
+  width: 158px;
   margin-top: 41px;
+  margin-left: 33px;
   padding-top: 17px;
+  padding-right: 10px;
   padding-bottom: 15px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,33 +48,36 @@
   }
 
   .process-making__title {
-    width: 252px;
     grid-row: 2/3;
-    font-size: 20px;
-    margin-left: 107px;
+    width: 252px;
     margin-top: 39px;
+    margin-left: 107px;
+
+    font-size: 20px;
   }
 
   .process-making__text {
     width: 583px;
+    margin-top: 25px;
+    margin-left: 40px;
+
     font-size: 15px;
     line-height: 30px;
-    margin-left: 40px;
-    margin-top: 25px;
   }
 
   .process-making__wrapper {
-    margin: auto;
     display: grid;
+    margin: auto;
   }
 
   .process-making__button {
     width: 543px;
-    text-align: center;
-    margin-left: 40px;
     margin-top: 40px;
+    margin-left: 40px;
     padding-right: 19px;
     padding-left: 20px;
+
+    text-align: center;
   }
 
   .process-making__wrapper img {
@@ -89,39 +95,40 @@
   }
 
   .process-making__wrapper {
-    grid-template-columns: 683px auto;
     grid-template-rows: 1fr 1fr min-content;
+    grid-template-columns: 683px auto;
   }
 
   .process-making__wrapper img {
+    grid-row: 1/-1;
     width: 683px;
     height: 455px;
     margin: auto;
-    grid-row: 1/-1;
   }
 
   .process-making__button {
     width: 230px;
-    text-align: center;
-    margin-left: 78px;
-    margin-bottom: 58px;
-    padding-left: 0;
-    padding-right: 0;
     margin-top: 9px;
+    margin-bottom: 58px;
+    margin-left: 78px;
+    padding-right: 0;
+    padding-left: 0;
+
+    text-align: center;
   }
 
   .process-making__title {
-    grid-column: 2/3;
     grid-row: 1/2;
+    grid-column: 2/3;
     width: 228px;
     margin-top: 98px;
     margin-left: 79px;
   }
 
   .process-making__text {
-    width: 253px;
     grid-row: 2/3;
-    margin-left: 79px;
+    width: 253px;
     margin-top: 5px;
+    margin-left: 79px;
   }
 }
