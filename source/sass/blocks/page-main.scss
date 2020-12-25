@@ -18,6 +18,10 @@
   }
 }
 
+.page-main__wrapper--index {
+  background-color: $bc-index;
+}
+
 .page-main__wrapper--catalog {
   width: $mobile-wrapper;
   margin: auto;
@@ -213,7 +217,6 @@
     width: 100%;
     margin: auto;
     margin-top: -60px;
-    // background-size: cover;
 
     background-image: url("../img/bc-desktop.jpg");
     background-position: center 0;

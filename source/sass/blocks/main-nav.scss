@@ -6,32 +6,6 @@
   display: block;
 }
 
-// .main-nav__logo-img {
-//   &--tablet,
-//   &--desktop {
-//     display: none;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     &--mobile {
-//       display: none;
-//     }
-
-//     &--tablet {
-//       display: block;
-//     }
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     &--tablet {
-//       display: none;
-//     }
-
-//     &--desktop {
-//       display: block;
-//     }
-//   }
-// }
 
 .main-nav__toggle {
   position: absolute;
