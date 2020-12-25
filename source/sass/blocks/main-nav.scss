@@ -6,47 +6,20 @@
   display: block;
 }
 
-.main-nav__logo-img {
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-}
 
 .main-nav__toggle {
   position: absolute;
   top: 30px;
   right: 30px;
+
   width: 21px;
   height: 20px;
-
   padding: 0;
 
+  background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
   outline: none;
-
-  background-repeat: no-repeat;
-  background-color: transparent;
 }
 
 .main-nav--opened .main-nav__toggle--close-open {
@@ -228,8 +201,8 @@
   }
 
   .main-nav__logo {
-    width: 147px;
     order: 2;
+    width: 147px;
     margin-left: 75px;
   }
 

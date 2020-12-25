@@ -14,14 +14,15 @@
     <nav class="main-nav main-nav--opened">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
-            height="35" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="img/mishka-logo-tablet.svg" width="113"
-            height="46" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="img/mishka-logo-desktop.svg" width="149"
-            height="72" alt="Логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
+              height="35" alt="Логотип Mishka">
+          </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
+            class="visually-hidden">Открыть меню</span></button>
         <a class="main-nav__link" href="#">Поиск по сайту</a>
         <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         <ul class="main-nav__list">
@@ -45,7 +46,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__wrapper">
+    <div class="page-main__wrapper page-main__wrapper--index">
       <h2 class="page-main__title">
         Милые штуки ручной работы для дома
       </h2>
@@ -75,8 +76,15 @@
           <dt class="item-of-day__detail">Высота:</dt>
           <dd class="item-of-day__description">15 см</dd>
         </dl>
-        <img src="https://via.placeholder.com/260x315" width="260" height="315" alt="Фото товара">
-        <p class="item-of-day__price">Цена: 990руб.</p>
+        <div class="item-of-day__image">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+              alt="Фото товара">
+          </picture>
+        </div>
+        <p class="item-of-day__price">Цена: 990 руб.</p>
         <a class="button item-of-day__button" href="#">
           Заказать
         </a>

@@ -5,19 +5,39 @@
 .page-main__wrapper {
   min-height: 282px;
   // width: 260px;
-
+  background-image: none;
   background-color: $grey;
-  background-image: url("https://via.placeholder.com/320x282");
+  // background-image: url("../img/bc-mobile.jpg");
+  // background-repeat: no-repeat;
+  // // background-size: cover;
+  // background-position: center -20px;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/bc-mobile@2x.jpg");
+  //   background-size: 320px;
+  // }
+}
+
+.page-main__wrapper--index {
+  background-color: $bc-index;
+  background-image: url("../img/bc-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-position: center -20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bc-mobile@2x.jpg");
+    background-size: 320px;
+  }
 }
 
 .page-main__wrapper--catalog {
   width: $mobile-wrapper;
   margin: auto;
   margin-top: 0;
-  background-image: none;
+
   background-color: transparent;
+  background-image: none;
 
   @media (min-width: $tablet-width) {
     width: $tablet-wrapper;
@@ -115,11 +135,12 @@
   }
 
   .page-main__title--catalog {
-    font-size: 43px;
-    line-height: 50px;
     width: 100%;
     margin-top: -66px;
     padding-bottom: 63px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .page-main {
@@ -131,8 +152,17 @@
     min-height: 626px;
     margin: auto;
     margin-top: -65px;
+  }
 
-    background-color: transparent;
+  .page-main__wrapper--index {
+    background-image: url("../img/bc-tablet.jpg");
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bc-tablet@2x.jpg");
+      background-position: center 0;
+      background-size: 768px;
+    }
   }
 
   .page-main__wrapper--form {
@@ -198,8 +228,16 @@
     width: 100%;
     margin: auto;
     margin-top: -60px;
+  }
 
-    background-size: cover;
+  .page-main__wrapper--index {
+    background-image: url("../img/bc-desktop.jpg");
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bc-desktop@2x.jpg");
+      background-size: 1150px;
+    }
   }
 
   .page-main__wrapper--catalog {
