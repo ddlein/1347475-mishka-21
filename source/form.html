@@ -14,14 +14,15 @@
     <nav class="main-nav main-nav--opened">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
-            height="35" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="img/mishka-logo-tablet.svg" width="113"
-            height="46" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="img/mishka-logo-desktop.svg" width="149"
-            height="72" alt="Логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
+              height="35" alt="Логотип Mishka">
+          </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
+            class="visually-hidden">Открыть меню</span></button>
         <a class="main-nav__link" href="#">Поиск по сайту</a>
         <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         <ul class="main-nav__list">
