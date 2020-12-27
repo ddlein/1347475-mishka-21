@@ -10,15 +10,15 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--opened">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
-            height="35" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--tablet" src="img/mishka-logo-tablet.svg" width="113"
-            height="46" alt="Логотип Mishka">
-          <img class="main-nav__logo-img main-nav__logo-img--desktop" src="img/mishka-logo-desktop.svg" width="149"
-            height="72" alt="Логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="main-nav__logo-img main-nav__logo-img--mobile" src="img/mishka-logo-mobile.svg" width="86"
+              height="35" alt="Логотип Mishka">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
             class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +50,11 @@
       <ul class="catalog">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <a class="catalog__item-title" href="#">Зайчик-попрыгайчик</a>
           <p class="catalog__item-detail">Рост 30 см, вес 200 г</p>
@@ -59,7 +63,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <a class="catalog__item-title" href="">Корзинка для белья</a>
           <p class="catalog__item-detail">Диаметр 15 см, высота 10 см</p>
@@ -68,7 +76,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <a class="catalog__item-title" href="#">Большая корзинка для игрушек</a>
           <p class="catalog__item-detail">Диаметр 30 см, высота 30 см</p>
@@ -80,7 +92,14 @@
       <section class="process-making">
         <div class="process-making__wrapper">
           <h2 class="process-making__title">Процесс производства</h2>
-          <img src="https://via.placeholder.com/260x150" width="260" height="150" alt="Видео">
+          <div class="process-making__video">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео">
+            </picture>
+          </div>
+
           <p class="process-making__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
           </p>
