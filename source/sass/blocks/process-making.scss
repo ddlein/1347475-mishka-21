@@ -99,8 +99,13 @@
     grid-template-columns: 683px auto;
   }
 
-  .process-making__wrapper img {
+  .process-making__video {
     grid-row: 1/-1;
+    height: 455px;
+  }
+
+  .process-making__wrapper img {
+    // grid-row: 1/-1;
     width: 683px;
     height: 455px;
     margin: auto;
