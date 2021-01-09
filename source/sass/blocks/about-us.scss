@@ -1,7 +1,8 @@
 .about-us {
   width: $mobile-wrapper;
   margin: auto;
-  margin-top: 73px;
+  margin-top: 53px;
+  margin-bottom: 39px;
 }
 
 .about-us__title {
@@ -11,21 +12,105 @@
 }
 
 .about-us__list {
-  list-style: none;
   margin: 0;
-  padding: 0;
   margin-top: 60px;
   margin-left: -6px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .about-us__item {
-  padding: 5px;
+  position: relative;
+
   margin-bottom: 39px;
+  padding: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: inline-block;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us__item:nth-child(1) {
+  &::before {
+    bottom: 81px;
+    left: 14px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/icon-1.svg");
+  }
+}
+
+.about-us__item:nth-child(2) {
+  &::before {
+    bottom: 91px;
+    left: 6px;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-2.svg");
+  }
+}
+
+.about-us__item:nth-child(3) {
+  &::before {
+    bottom: 86px;
+    left: 13px;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-3.svg");
+  }
+}
+
+.about-us__item:nth-child(4) {
+  &::before {
+    bottom: 82px;
+    left: 8px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-4.svg");
+  }
+}
+
+.about-us__item:nth-child(5) {
+  &::before {
+    bottom: 92px;
+    left: 0;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-5.svg");
+  }
+}
+
+.about-us__item:nth-child(6) {
+  &::before {
+    bottom: 85px;
+    left: 9px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-6.svg");
+  }
 }
 
 .about-us__text {
-  line-height: 20px;
   font-weight: bold;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,9 +120,10 @@
   }
 
   .about-us__title {
+    margin-top: 102px;
+
     font-size: 43px;
     line-height: 50px;
-    margin-top: 126px;
   }
 
   .about-us__text {
@@ -47,12 +133,15 @@
 
   .about-us__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 668px;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    grid-auto-flow: column;
+    width: 668px;
     margin-top: 72px;
+
+    column-gap: 5px;
+
+    grid-auto-flow: column;
   }
 }
 
@@ -62,15 +151,17 @@
   }
 
   .about-us__title {
+    margin-top: 140px;
+    margin-left: 175px;
+
     font-size: 53px;
     line-height: 57px;
-    margin-top: 165px;
-    margin-left: 175px;
   }
 
   .about-us__list {
-    column-gap: 29px;
+    margin-top: 71px;
     margin-left: 172px;
-    margin-top: 69px;
+
+    column-gap: 29px;
   }
 }
