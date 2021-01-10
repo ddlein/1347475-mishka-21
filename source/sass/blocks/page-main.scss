@@ -112,7 +112,6 @@
   // background-color: $grey;
 }
 
-
 .page-main__title--catalog {
   width: 100%;
   margin: auto;
@@ -129,6 +128,25 @@
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-main__line {
+    width: 100%;
+    // position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 818px;
+      // bottom: -373px;
+      // left: -50px;
+      fill: $black;
+      display: block;
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+      background-image: url("../img/zigzag-tablet.svg");
+    }
   }
 
   .page-main__title--catalog {
@@ -202,19 +220,19 @@
     // background-image: url("../img/zigzag-tablet.svg");
     // background-size: auto;
     // background-position: 20px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 106px;
-      bottom: 0;
-      left: -50px;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 106px;
+    //   bottom: 0;
+    //   left: -50px;
 
-      display: block;
-      width: 768px;
-      height: 24px;
+    //   display: block;
+    //   width: 768px;
+    //   height: 24px;
 
-      background-image: url("../img/zigzag-tablet.svg");
-    }
+    //   background-image: url("../img/zigzag-tablet.svg");
+    // }
   }
 
   .page-main__text {
@@ -234,6 +252,23 @@
   .page-main {
     // width: 1050px;
     margin: 0 auto;
+  }
+
+  .page-main__line {
+    &::after {
+      content: "";
+      position: absolute;
+      // top: 106px;
+      bottom: -373px;
+      // left: -50px;
+      top: 817px;
+      display: inline-block;
+      width: 100%;
+      height: 24px;
+
+      // background-image: url("../img/zigzag-fill-desktop.svg.svg");
+      background-image: url("../img/zigzag-desktop.svg");
+    }
   }
 
   .page-main__title {
@@ -256,14 +291,14 @@
     margin: auto;
     margin-top: -117px;
 
-    &::after {
-      top: 102px;
+    // &::after {
+    //   top: 102px;
 
-      width: 1150px;
-      height: 34px;
+    //   width: 1150px;
+    //   height: 34px;
 
-      background-image: url("../img/zigzag-desktop.svg");
-    }
+    //   background-image: url("../img/zigzag-desktop.svg");
+    // }
   }
 
   .page-main__wrapper {
