@@ -111,6 +111,11 @@
     margin: 0;
   }
 
+  .contacts__description a::after {
+    width: 203px;
+    top: 25px;
+  }
+
   .contacts__wrapper {
     width: $tablet-wrapper;
     grid-template-columns: 79px 257px 77px 223px;

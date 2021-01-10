@@ -322,7 +322,7 @@
 
     &:not(.main-nav__list--new)::before {
       top: 81px;
-      left: -49px;
+      // left: -49px;
 
       width: $desktop-width;
     }

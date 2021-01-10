@@ -12,3 +12,9 @@
 .copyright__academy-logo {
   fill: $logo;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    left: 9px;
+  }
+}
