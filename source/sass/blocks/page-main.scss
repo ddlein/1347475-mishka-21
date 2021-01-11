@@ -4,18 +4,9 @@
 
 .page-main__wrapper {
   min-height: 282px;
-  // width: 260px;
-  background-image: none;
-  background-color: $grey;
-  // background-image: url("../img/bc-mobile.jpg");
-  // background-repeat: no-repeat;
-  // // background-size: cover;
-  // background-position: center -20px;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/bc-mobile@2x.jpg");
-  //   background-size: 320px;
-  // }
+  background-color: $grey;
+  background-image: none;
 }
 
 .page-main__wrapper--index {
@@ -71,18 +62,24 @@
   padding-bottom: 20px;
 
   background-color: $green;
+  background-image: url("../img/interior.svg");
+  background-repeat: no-repeat;
+  background-position: 88% 25px;
 }
 
-.page-main__nav-item:nth-child(1) a {
+.page-main__nav-item:nth-child(1) .page-main__nav-link {
   padding-top: 26px;
   padding-left: 30px;
 }
 
 .page-main__nav-item:nth-child(2) {
   background-color: $green-dark;
+  background-image: url("../img/toy.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 21px;
 }
 
-.page-main__nav-item:nth-child(2) a {
+.page-main__nav-item:nth-child(2) .page-main__nav-link {
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -115,7 +112,6 @@
   // background-color: $grey;
 }
 
-
 .page-main__title--catalog {
   width: 100%;
   margin: auto;
@@ -128,10 +124,29 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     width: 500px;
-    padding-top: 100px;
+    padding-top: 154px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-main__line {
+    width: 100%;
+    // position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 818px;
+      // bottom: -373px;
+      // left: -50px;
+      fill: $black;
+      display: block;
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+      background-image: url("../img/zigzag-tablet.svg");
+    }
   }
 
   .page-main__title--catalog {
@@ -152,9 +167,12 @@
     min-height: 626px;
     margin: auto;
     margin-top: -65px;
+    padding-bottom: 118px;
   }
 
   .page-main__wrapper--index {
+    margin-top: -91px;
+
     background-image: url("../img/bc-tablet.jpg");
     background-position: center 0;
 
@@ -171,20 +189,50 @@
     background-color: $grey;
   }
 
-  .page-main__nav-link {
-    padding-top: 25px;
-    padding-left: 36px;
-
+  .page-main__nav-list .page-main__nav-link {
     font-size: 20px;
     line-height: 30px;
   }
 
+  .page-main__nav-item:nth-child(1) .page-main__nav-link,
+  .page-main__nav-item:nth-child(2) .page-main__nav-link {
+    padding-top: 26px;
+    padding-left: 36px;
+  }
+
+  .page-main__nav-item:nth-child(1) {
+    background-position: 88% 30px;
+  }
+
+  .page-main__nav-item:nth-child(2) {
+    background-position: 88% 32px;
+  }
+
   .page-main__nav-list {
+    position: relative;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: $tablet-wrapper;
     margin: auto;
-    margin-bottom: 75px;
+    margin-top: -118px;
+    margin-bottom: 74px;
+    // background-image: url("../img/zigzag-tablet.svg");
+    // background-size: auto;
+    // background-position: 20px;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 106px;
+    //   bottom: 0;
+    //   left: -50px;
+
+    //   display: block;
+    //   width: 768px;
+    //   height: 24px;
+
+    //   background-image: url("../img/zigzag-tablet.svg");
+    // }
   }
 
   .page-main__text {
@@ -206,7 +254,26 @@
     margin: 0 auto;
   }
 
+  .page-main__line {
+    &::after {
+      content: "";
+      position: absolute;
+      // top: 106px;
+      bottom: -373px;
+      // left: -50px;
+      top: 817px;
+      display: inline-block;
+      width: 100%;
+      height: 24px;
+
+      // background-image: url("../img/zigzag-fill-desktop.svg.svg");
+      background-image: url("../img/zigzag-desktop.svg");
+    }
+  }
+
   .page-main__title {
+    width: 630px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -222,6 +289,16 @@
   .page-main__nav-list {
     width: $desktop-wrapper;
     margin: auto;
+    margin-top: -117px;
+
+    // &::after {
+    //   top: 102px;
+
+    //   width: 1150px;
+    //   height: 34px;
+
+    //   background-image: url("../img/zigzag-desktop.svg");
+    // }
   }
 
   .page-main__wrapper {
@@ -231,6 +308,8 @@
   }
 
   .page-main__wrapper--index {
+    margin-top: -91px;
+
     background-image: url("../img/bc-desktop.jpg");
     background-position: center 0;
 
@@ -242,5 +321,13 @@
 
   .page-main__wrapper--catalog {
     margin-top: 10px;
+  }
+
+  .page-main__nav-item:nth-child(1) {
+    background-position: 93% 30px;
+  }
+
+  .page-main__nav-item:nth-child(2) {
+    background-position: 93% 32px;
   }
 }
