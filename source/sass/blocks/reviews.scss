@@ -133,6 +133,10 @@
     }
   }
 
+  .reviews__mobile {
+    display: none;
+  }
+
   .reviews::after {
     content: "";
     position: absolute;

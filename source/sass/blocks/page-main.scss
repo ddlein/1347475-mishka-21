@@ -107,7 +107,7 @@
 
 .page-main__wrapper--form {
   min-height: 177px;
-
+  position: relative;
   background-image: none;
   // background-color: $grey;
 }
@@ -158,6 +158,10 @@
     line-height: 50px;
   }
 
+  .page-main__title--form {
+    padding-top: 102px;
+  }
+
   .page-main {
     margin: 0 auto;
   }
@@ -185,8 +189,23 @@
 
   .page-main__wrapper--form {
     min-height: 213px;
-
+    margin-top: -91px;
     background-color: $grey;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 213px;
+      // bottom: -373px;
+      // left: -50px;
+      fill: $black;
+      display: block;
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+      background-image: url("../img/zigzag-tablet.svg");
+    }
   }
 
   .page-main__nav-list .page-main__nav-link {
@@ -237,7 +256,7 @@
 
   .page-main__text {
     width: $tablet-wrapper;
-    margin-top: 78px;
+    margin-top: 69px;
 
     font-size: 17px;
     line-height: 30px;
@@ -271,6 +290,23 @@
     }
   }
 
+  .page-main__wrapper {
+    width: 100%;
+    margin: auto;
+    margin-top: -60px;
+  }
+
+  .page-main__wrapper--form {
+    z-index: -1;
+    margin-top: -91px;
+    padding-bottom: 39px;
+
+    &::after {
+      background-image: url("../img/zigzag-desktop.svg");
+      top: 238px;
+    }
+  }
+
   .page-main__title {
     width: 630px;
 
@@ -284,6 +320,7 @@
 
   .page-main__text {
     width: 702px;
+    margin-top: 120px;
   }
 
   .page-main__nav-list {
@@ -301,11 +338,6 @@
     // }
   }
 
-  .page-main__wrapper {
-    width: 100%;
-    margin: auto;
-    margin-top: -60px;
-  }
 
   .page-main__wrapper--index {
     margin-top: -91px;
