@@ -258,7 +258,7 @@
 }
 
 .form__fieldset-wrapper:nth-child(5) {
-  margin-top: -4px;
+  margin-top: -8px;
   margin-bottom: -7px;
 
   .form__legend::before {
@@ -269,7 +269,7 @@
 
 .form__fieldset-wrapper:nth-child(6) {
   .form__fieldset {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
   }
 
   .form__legend {
@@ -285,8 +285,10 @@
 
 .form__phone-logo {
   position: relative;
-  left: 225px;
-  top: -34px;
+  left: 228px;
+  top: -38px;
+  width: 26px;
+  height: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -494,7 +496,7 @@
   }
 
   .form__fieldset-wrapper:nth-child(6) {
-    margin-top: 178px;
+    margin-top: 78px;
     margin-left: 27px;
 
     .form__legend {
@@ -509,6 +511,7 @@
     left: -20px;
     padding-left: 12px;
     width: 484px;
+    resize: vertical;
   }
 
   .form__button {
@@ -539,7 +542,6 @@
 
   .form__send-wrapper {
     position: relative;
-    left: 37px;
     justify-content: start;
     width: 700px;
   }
@@ -638,12 +640,11 @@
     top: -5px;
     margin-top: 22px;
     position: relative;
-    left: -37px;
     // margin-top: 0;
   }
 
   .form__required {
-    margin-left: 133px;
+    margin-left: 168px;
     margin-top: 33px;
   }
 }
