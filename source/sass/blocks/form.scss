@@ -197,6 +197,7 @@
   padding-top: 16px;
   height: 122px;
   border: 2px solid $grey-text;
+  resize: vertical;
 }
 
 .form__required {
@@ -515,7 +516,6 @@
     left: -20px;
     padding-left: 12px;
     width: 484px;
-    resize: vertical;
   }
 
   .form__button {
