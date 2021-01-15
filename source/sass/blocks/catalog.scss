@@ -63,11 +63,26 @@
   line-height: 24px;
 }
 
+.catalog__item-busket {
+  position: relative;
+}
+
+.catalog__busket-icon {
+  opacity: 0.2;
+  position: absolute;
+  left: 110px;
+  top: 3px;
+}
+
+.catalog__item:nth-child(2) .catalog__busket-icon {
+  left: 122px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     width: $tablet-wrapper;
     margin: auto;
-    margin-top: 92px;
+    margin-top: 75px;
   }
 
   .catalog__link {
@@ -113,7 +128,7 @@
 
   .catalog__item:last-child .catalog__item-title {
     &::after {
-      top: 228px;
+      top: 232px;
     }
   }
 
@@ -132,6 +147,15 @@
     margin-left: 33px;
 
     font-size: 17px;
+  }
+
+  .catalog__busket-icon,
+  .catalog__item:nth-child(2) .catalog__busket-icon {
+    // right: -302px;
+    // top: -49px;
+    left: 614px;
+    top: -49px;
+    // bottom: 0;
   }
 }
 
@@ -175,7 +199,6 @@
     margin-bottom: -7px;
     margin-left: 27px;
 
-
     &::after {
       top: 97px;
     }
@@ -209,5 +232,18 @@
     grid-column: 1/2;
     margin-top: 37px;
     margin-left: 27px;
+  }
+
+  .catalog__item:nth-child(2) .catalog__item-detail {
+    margin-top: 5px;
+  }
+
+  .catalog__busket-icon {
+    left: 262px;
+    top: -49px;
+  }
+
+  .catalog__item:nth-child(2) .catalog__busket-icon {
+    left: 260px;
   }
 }
