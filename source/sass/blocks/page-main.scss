@@ -211,6 +211,8 @@
 
   .page-main__wrapper--catalog {
     margin-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 65px;
 
     &::after {
       content: "";
