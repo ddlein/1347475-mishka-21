@@ -18,12 +18,14 @@
 
 .process-making img {
   margin-top: 26px;
+  // width: 260px;
+  // height: 150px;
 }
 
 .process-making__text {
   width: 226px;
   margin: auto;
-  margin-top: -49px;
+  margin-top: 32px;
   margin-left: 32px;
 
   font-size: 13px;
@@ -44,6 +46,7 @@
 
 .process-making__video {
   margin-top: -26px;
+  position: relative;
 }
 
 .process-making__video-icon {
@@ -56,9 +59,9 @@
 }
 
 .process-making__play-icon {
-  position: relative;
+  position: absolute;
   left: 79px;
-  top: -117px;
+  top: 61px;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,7 +82,7 @@
 
   .process-making__text {
     width: 583px;
-    margin-top: 8px;
+    margin-top: 87px;
     margin-left: 40px;
 
     font-size: 15px;
@@ -113,8 +116,8 @@
   }
 
   .process-making__play-icon {
-    left: 283px;
-    top: -269px;
+    left: 284px;
+    top: 190px;
   }
 
   .process-making__video-icon {
@@ -138,8 +141,8 @@
   .process-making__video {
     grid-row: 1/-1;
     height: 325px;
-    margin-right: 1px;
-    margin-top: 1px;
+    margin-right: 0;
+    margin-top: 0;
   }
 
   .process-making__wrapper img {

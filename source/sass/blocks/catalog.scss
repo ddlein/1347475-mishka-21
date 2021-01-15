@@ -21,18 +21,17 @@
   font-weight: 700;
   line-height: 24px;
   color: $black;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 77px;
+  //   right: 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 77px;
-    right: 0;
+  //   width: 202px;
+  //   height: 1px;
 
-    width: 202px;
-    height: 1px;
-
-    background-color: $border-nav;
-  }
+  //   background-color: $border-nav;
+  // }
 }
 
 .catalog__item:last-child .catalog__item-title {
@@ -42,7 +41,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   padding-bottom: 27px;
 
   border: 1px solid $border-nav;
@@ -51,15 +50,34 @@
 .catalog__item-detail {
   margin-top: 4px;
   margin-left: 28px;
-
+  position: relative;
   font-size: 13px;
   line-height: 30px;
   color: $grey-text;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 28px;
+
+    width: 202px;
+    height: 1px;
+
+    background-color: $border-nav;
+  }
+}
+
+.catalog__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  width: 233px;
+  align-items: center;
 }
 
 .catalog__item-cost {
   display: inline-block;
-  margin-top: 28px;
   margin-left: 28px;
 
   font-weight: 700;
@@ -73,9 +91,6 @@
 
 .catalog__busket-icon {
   opacity: 0.2;
-  position: absolute;
-  left: 110px;
-  top: 3px;
 }
 
 .catalog__item:nth-child(2) .catalog__busket-icon {
@@ -121,19 +136,12 @@
     margin-left: 33px;
 
     font-size: 20px;
+    // &::after {
+    //   top: 233px;
+    //   left: 0;
 
-    &::after {
-      top: 233px;
-      left: 0;
-
-      width: 268px;
-    }
-  }
-
-  .catalog__item:last-child .catalog__item-title {
-    &::after {
-      top: 232px;
-    }
+    //   width: 268px;
+    // }
   }
 
   .catalog__item-detail {
@@ -143,14 +151,32 @@
     margin-left: 33px;
 
     font-size: 15px;
+
+    &::after {
+      top: 201px;
+      right: 31px;
+      width: 269px;
+    }
+  }
+
+  .catalog__item:last-child .catalog__item-detail {
+    &::after {
+      top: 179px;
+    }
   }
 
   .catalog__item-cost {
     grid-column: 2/3;
-    margin-top: 16px;
-    margin-left: 33px;
+    // margin-top: 16px;
+    margin-left: 0;
 
     font-size: 17px;
+  }
+
+  .catalog__price {
+    width: 270px;
+    margin-top: -9px;
+    margin-left: 33px;
   }
 
   .catalog__busket-icon,
@@ -202,10 +228,9 @@
     margin-top: 16px;
     margin-bottom: -7px;
     margin-left: 27px;
-
-    &::after {
-      top: 97px;
-    }
+    // &::after {
+    //   top: 97px;
+    // }
   }
 
   // .catalog__item:last-child {
@@ -214,10 +239,6 @@
 
   .catalog__item:last-child .catalog__item-title {
     margin-top: 23px;
-
-    &::after {
-      top: 97px;
-    }
   }
 
   .catalog__item-detail {
@@ -225,17 +246,27 @@
     grid-column: 1/2;
     margin-top: 5px;
     margin-left: 26px;
+
+    &::after {
+      width: 255px;
+      top: 67px;
+      right: 34px;
+    }
   }
 
   .catalog__item:last-child .catalog__item-detail {
     margin-top: 3px;
+
+    &::after {
+      top: 43px;
+    }
   }
 
   .catalog__item-cost {
     grid-row: 4/5;
     grid-column: 1/2;
-    margin-top: 37px;
-    margin-left: 27px;
+    // margin-top: 37px;
+    // margin-left: 27px;
   }
 
   .catalog__item:nth-child(2) .catalog__item-detail {
@@ -249,5 +280,11 @@
 
   .catalog__item:nth-child(2) .catalog__busket-icon {
     left: 260px;
+  }
+
+  .catalog__price {
+    width: 257px;
+    margin-top: 10px;
+    margin-left: 27px;
   }
 }
