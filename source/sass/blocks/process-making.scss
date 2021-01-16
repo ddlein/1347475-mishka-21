@@ -2,7 +2,7 @@
   width: $mobile-wrapper;
   margin: auto;
   padding-bottom: 32px;
-
+  margin-bottom: 57px;
   border: 1px solid $border-nav;
 }
 
@@ -16,14 +16,11 @@
   line-height: 24px;
 }
 
-.process-making img {
-  margin-top: 26px;
-}
 
 .process-making__text {
   width: 226px;
   margin: auto;
-  margin-top: 31px;
+  margin-top: 32px;
   margin-left: 32px;
 
   font-size: 13px;
@@ -42,6 +39,25 @@
   padding-left: 20px;
 }
 
+.process-making__video {
+  position: relative;
+}
+
+.process-making__video-icon {
+  width: 32px;
+  height: 22px;
+  fill: $green;
+  position: relative;
+  left: 33px;
+  bottom: 35px;
+}
+
+.process-making__play-icon {
+  position: absolute;
+  left: 79px;
+  top: 39px;
+}
+
 @media (min-width: $tablet-width) {
   .process-making {
     width: $tablet-wrapper;
@@ -54,11 +70,13 @@
     margin-left: 107px;
 
     font-size: 20px;
+    position: relative;
+    top: 433px;
   }
 
   .process-making__text {
     width: 583px;
-    margin-top: 25px;
+    margin-top: 87px;
     margin-left: 40px;
 
     font-size: 15px;
@@ -68,6 +86,7 @@
   .process-making__wrapper {
     display: grid;
     margin: auto;
+    padding-bottom: 11px;
   }
 
   .process-making__button {
@@ -85,6 +104,20 @@
     height: 455px;
     margin: auto;
   }
+
+  .process-making__video {
+    margin-top: -88px;
+  }
+
+  .process-making__play-icon {
+    left: 284px;
+    top: 190px;
+  }
+
+  .process-making__video-icon {
+    top: 492px;
+    left: 42px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -101,7 +134,9 @@
 
   .process-making__video {
     grid-row: 1/-1;
-    height: 455px;
+    height: 325px;
+    margin-right: 0;
+    margin-top: 0;
   }
 
   .process-making__wrapper img {
@@ -120,6 +155,9 @@
     padding-left: 0;
 
     text-align: center;
+    position: relative;
+    left: 684px;
+    top: 10px;
   }
 
   .process-making__title {
@@ -128,12 +166,23 @@
     width: 228px;
     margin-top: 98px;
     margin-left: 79px;
+    top: 0;
   }
 
   .process-making__text {
     grid-row: 2/3;
     width: 253px;
-    margin-top: 5px;
+    margin-top: 21px;
     margin-left: 79px;
+  }
+
+  .process-making__video-icon {
+    top: -255px;
+    left: 78px;
+  }
+
+  .process-making__play-icon {
+    width: 100px;
+    left: 293px;
   }
 }

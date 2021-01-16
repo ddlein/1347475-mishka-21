@@ -2,7 +2,7 @@
   background-color: $grey;
   // width: $mobile-wrapper;
   margin: auto;
-  margin-top: 37px;
+  margin-top: 40px;
 }
 
 .page-footer__img-wrapper {
@@ -47,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    margin-top: 58px;
+    margin-top: 57px;
   }
 
   .page-footer__img-wrapper {
@@ -74,8 +74,9 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin-top: 55px;
+    margin-top: 105px;
   }
+
 
   .page-footer__wrapper {
     width: $desktop-wrapper;

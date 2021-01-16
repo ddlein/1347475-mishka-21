@@ -299,7 +299,7 @@
 @media (min-width: $tablet-width) {
   .form {
     width: 100%;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
   }
 
   .form__fieldset {
@@ -526,6 +526,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: -57px;
+  }
+
   .form__fieldset {
     width: $desktop-form-wrapper;
     margin: auto;
@@ -553,7 +557,6 @@
   // .form__enter-contacts {
   //   width: 699px;
   // }
-
 
   .form__name-list .form__name-item:nth-child(1) {
     &::before {
