@@ -16,11 +16,6 @@
   line-height: 24px;
 }
 
-.process-making img {
-  margin-top: 26px;
-  // width: 260px;
-  // height: 150px;
-}
 
 .process-making__text {
   width: 226px;
@@ -45,7 +40,6 @@
 }
 
 .process-making__video {
-  margin-top: -26px;
   position: relative;
 }
 
@@ -61,7 +55,7 @@
 .process-making__play-icon {
   position: absolute;
   left: 79px;
-  top: 61px;
+  top: 39px;
 }
 
 @media (min-width: $tablet-width) {

@@ -178,15 +178,6 @@
     margin-top: -9px;
     margin-left: 33px;
   }
-
-  .catalog__busket-icon,
-  .catalog__item:nth-child(2) .catalog__busket-icon {
-    // right: -302px;
-    // top: -49px;
-    left: 614px;
-    top: -49px;
-    // bottom: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -228,14 +219,8 @@
     margin-top: 16px;
     margin-bottom: -7px;
     margin-left: 27px;
-    // &::after {
-    //   top: 97px;
-    // }
   }
 
-  // .catalog__item:last-child {
-  //   grid-template-rows: auto auto auto auto;
-  // }
 
   .catalog__item:last-child .catalog__item-title {
     margin-top: 23px;
@@ -273,10 +258,6 @@
     margin-top: 5px;
   }
 
-  .catalog__busket-icon {
-    left: 262px;
-    top: -49px;
-  }
 
   .catalog__item:nth-child(2) .catalog__busket-icon {
     left: 260px;
