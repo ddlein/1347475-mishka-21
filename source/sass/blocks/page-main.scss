@@ -303,7 +303,7 @@
       height: 24px;
 
       // background-image: url("../img/zigzag-fill-desktop.svg.svg");
-      background-image: url("../img/zigzag-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
 
@@ -319,7 +319,7 @@
     padding-bottom: 39px;
 
     &::after {
-      background-image: url("../img/zigzag-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
       top: 238px;
     }
   }
@@ -372,7 +372,7 @@
     margin-top: -13px;
 
     &::after {
-      background-image: url("../img/zigzag-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
       top: 326px;
     }
   }
