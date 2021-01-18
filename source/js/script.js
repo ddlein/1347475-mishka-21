@@ -12,3 +12,31 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+// Popup
+
+let popup = document.querySelector('.popup');
+let popupButton = document.querySelector('.popup__button');
+let popupOpen = document.querySelectorAll('.popup-open');
+
+
+
+popupOpen.forEach ((element => {
+  element.addEventListener('click', () => {
+    popup.classList.add('popup--show')
+  })
+}))
+
+// basketButton.addEventListener('click', () => {
+//   popup.classList.add('popup--show')
+// })
+
+popup.addEventListener('click', (evt) => {
+  if (evt.target.closest('.popup__wrapper') === null) {
+    popup.classList.remove('popup--show')
+  }
+})
+
+popupButton.addEventListener('click', () => {
+  popup.classList.remove('popup--show')
+})

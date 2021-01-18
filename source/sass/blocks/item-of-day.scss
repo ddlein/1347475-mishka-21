@@ -169,6 +169,10 @@
     // justify-self: end;
   }
 
+  .item-of-day__button {
+    z-index: 10;
+  }
+
   .item-of-day__wrapper > .item-of-day__button {
     grid-column: 1/2;
     justify-self: center;

@@ -125,7 +125,7 @@
           <p class="catalog__item-detail">Рост 30 см, вес 200 г</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 200 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -148,7 +148,7 @@
           <p class="catalog__item-detail">Диаметр 15 см, высота 10 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">690 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -170,7 +170,7 @@
           <p class="catalog__item-detail">Диаметр 30 см, высота 30 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 500 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -248,23 +248,40 @@
     </div>
   </footer>
 
-  <script>
-    let navMain = document.querySelector('.main-nav');
-    let navToggle = document.querySelector('.main-nav__toggle');
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Добавить<br class="popup__br"> в корзину</h2>
+      <form action="#" method="get">
+        <fieldset class="popup__form">
+          <legend class="popup__legend">Выберите размер:</legend>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <label class="popup__label" for="s">
+                <input class="popup__input" type="radio" id="s" name="choose-size" value="size" checked>
+                <span class="popup__border"></span>
+                S
+              </label>
+            </li>
+            <li class="popup__item"><label class="popup__label" for="m">
+                <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
+                <span class="popup__border"></span>
+                M
+              </label>
+            </li>
+            <li class="popup__item"><label class="popup__label" for="l">
+                <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
+                <span class="popup__border"></span>
+                L
+              </label>
+            </li>
+          </ul>
+          <button class="popup__button button">Добавить</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
 
-    navMain.classList.remove('main-nav--no-js');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
