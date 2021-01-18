@@ -320,15 +320,17 @@
               </label>
             </li>
             <li class="popup__item"><label class="popup__label" for="m">
-              <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
-              <span class="popup__border"></span>
-              M
-            </label></li>
+                <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
+                <span class="popup__border"></span>
+                M
+              </label>
+            </li>
             <li class="popup__item"><label class="popup__label" for="l">
-              <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
-              <span class="popup__border"></span>
-              L
-            </label></li>
+                <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
+                <span class="popup__border"></span>
+                L
+              </label>
+            </li>
           </ul>
           <button class="popup__button button">Добавить</button>
         </fieldset>
@@ -336,21 +338,21 @@
     </div>
   </section>
 
-  <script>
-    let navMain = document.querySelector('.main-nav');
-    let navToggle = document.querySelector('.main-nav__toggle');
+  <script src="js/script.js">
+    // let navMain = document.querySelector('.main-nav');
+    // let navToggle = document.querySelector('.main-nav__toggle');
 
-    navMain.classList.remove('main-nav--no-js');
+    // navMain.classList.remove('main-nav--no-js');
 
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
+    // navToggle.addEventListener('click', function () {
+    //   if (navMain.classList.contains('main-nav--closed')) {
+    //     navMain.classList.remove('main-nav--closed');
+    //     navMain.classList.add('main-nav--opened');
+    //   } else {
+    //     navMain.classList.add('main-nav--closed');
+    //     navMain.classList.remove('main-nav--opened');
+    //   }
+    // });
 
   </script>
 
