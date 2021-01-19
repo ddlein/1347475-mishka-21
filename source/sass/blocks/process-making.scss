@@ -4,6 +4,15 @@
   padding-bottom: 32px;
   margin-bottom: 57px;
   border: 1px solid $border-nav;
+
+  &:hover,
+  &:focus {
+    box-shadow: $item-hover;
+  }
+
+  &:active {
+    box-shadow: $item-active;
+  }
 }
 
 .process-making__title {
@@ -15,7 +24,6 @@
   font-size: 17px;
   line-height: 24px;
 }
-
 
 .process-making__text {
   width: 226px;
@@ -97,6 +105,17 @@
     padding-left: 20px;
 
     text-align: center;
+
+    &:hover,
+    &:focus {
+      background: $button-hover;
+      color: $white;
+    }
+
+    &:active {
+      background: $button-hover;
+      color: $button-active;
+    }
   }
 
   .process-making__wrapper img {
@@ -112,6 +131,16 @@
   .process-making__play-icon {
     left: 284px;
     top: 190px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   .process-making__video-icon {

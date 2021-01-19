@@ -45,6 +45,15 @@
   padding-bottom: 27px;
 
   border: 1px solid $border-nav;
+
+  &:hover,
+  &:focus {
+    box-shadow: $item-hover;
+  }
+
+  &:active {
+    box-shadow: $item-active;
+  }
 }
 
 .catalog__item-detail {
@@ -204,6 +213,23 @@
     grid-auto-flow: row;
   }
 
+  .catalog__item-busket {
+    &:hover,
+    &:focus {
+      .catalog__busket-icon {
+        fill: $green;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      .catalog__busket-icon {
+        // fill: $green;
+        opacity: 0.3;
+      }
+    }
+  }
+
   .catalog__item:last-child {
     grid-template-rows: 465px 74px 33px 86px;
   }
@@ -219,8 +245,16 @@
     margin-top: 16px;
     margin-bottom: -7px;
     margin-left: 27px;
-  }
 
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   .catalog__item:last-child .catalog__item-title {
     margin-top: 23px;
@@ -257,7 +291,6 @@
   .catalog__item:nth-child(2) .catalog__item-detail {
     margin-top: 5px;
   }
-
 
   .catalog__item:nth-child(2) .catalog__busket-icon {
     left: 260px;

@@ -16,5 +16,14 @@
 @media (min-width: $tablet-width) {
   .copyright__link {
     left: 9px;
+
+    &:hover,
+    &:focus {
+      fill: $mail-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

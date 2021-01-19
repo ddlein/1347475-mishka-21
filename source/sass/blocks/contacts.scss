@@ -45,6 +45,17 @@
   }
 }
 
+.contacts__description a:hover,
+.contacts__description a:focus {
+  color: $mail-hover;
+}
+
+.contacts__description a:active {
+  &::after {
+    opacity: 0.1;
+  }
+}
+
 .contacts__description address {
   font-style: normal;
 }
@@ -148,6 +159,17 @@
     margin-top: 98px;
     padding-left: 35px;
     padding-right: 27px;
+
+    &:hover,
+    &:focus {
+      background: $button-hover;
+      color: $white;
+    }
+
+    &:active {
+      background: $button-hover;
+      color: $button-active;
+    }
   }
 }
 

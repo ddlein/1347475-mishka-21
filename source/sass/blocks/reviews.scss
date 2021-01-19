@@ -179,6 +179,15 @@
 
   .reviews__buttons button {
     border: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .reviews__button-left {
@@ -239,6 +248,17 @@
 
     padding-right: 39px;
     padding-left: 37px;
+
+    &:hover,
+    &:focus {
+      background: $button-hover;
+      color: $white;
+    }
+
+    &:active {
+      background: $button-hover;
+      color: $button-active;
+    }
   }
 }
 

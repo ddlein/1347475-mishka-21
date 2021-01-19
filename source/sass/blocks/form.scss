@@ -62,6 +62,10 @@
 //   border: 2px solid tomato;
 // }
 
+// .form__radio-button:checked:disabled + span {
+//   opacity: 0.5;
+// }
+
 .form__name-list {
   margin: 0;
   padding: 0;
@@ -178,6 +182,7 @@
 .form__enter {
   margin-top: 15px;
   margin-bottom: 15px;
+  padding-bottom: 12px;
 
   border: none;
 
@@ -198,6 +203,15 @@
   height: 122px;
   border: 2px solid $grey-text;
   resize: vertical;
+
+  &:hover,
+  &:focus {
+    border-color: $green;
+  }
+
+  &:active {
+    border-color: $green;
+  }
 }
 
 .form__required {
@@ -215,25 +229,43 @@
   padding-left: 39px;
   margin-top: 16px;
   padding-bottom: 17px;
+  background-color: $white;
 }
 
 .form__name-item {
   position: relative;
-  margin-bottom: 4px;
+  margin-bottom: -6px;
   padding-top: 15px;
   // box-shadow: 0 2px 0 0 $black;
   padding-bottom: 1px;
 
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 84px;
+  //   left: 0;
+
+  //   width: 260px;
+  //   height: 2px;
+
+  //   background-color: $black;
+  // }
+}
+
+.form__name-list .form__enter {
+  box-shadow: 0 2px 0 0 $black;
+  width: 258px;
+}
+
+.form__enter:focus,
+.form__enter:hover {
+  box-shadow: 0 2px 0 0 $green;
+}
+
+.form__name-item:hover,
+.form__name-item:focus {
   &::after {
-    content: "";
-    position: absolute;
-    top: 84px;
-    left: 0;
-
-    width: 260px;
-    height: 2px;
-
-    background-color: $black;
+    background-color: $green;
   }
 }
 
@@ -243,14 +275,6 @@
   padding-bottom: 18px;
   padding-top: 3px;
   box-shadow: 0 2px 0 0 $black;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   height: 2px;
-  //   width: 260px;
-  //   background-color: $black;
-  // }
 }
 
 .form__fieldset-wrapper:nth-child(1) {
@@ -286,6 +310,7 @@
   position: relative;
   left: 225px;
   top: -34px;
+  opacity: 0.2;
 }
 
 .form__phone-logo {
@@ -294,6 +319,31 @@
   top: -38px;
   width: 26px;
   height: 25px;
+  opacity: 0.2;
+}
+
+.form__enter-contacts:hover,
+.form__enter-contacts:focus {
+  box-shadow: 0 2px 0 0 $green;
+}
+
+.form__enter-contacts:active {
+  box-shadow: 0 2px 0 0 $green;
+}
+
+.form__enter-contacts:hover + svg,
+.form__enter-contacts:focus + svg {
+  fill: $green;
+  opacity: 1;
+}
+
+.form__input:hover + .form__span,
+.form__input:focus + .form__span {
+  border-color: $green-light;
+}
+
+.form__input:active + .form__span {
+  border-color: $span-active;
 }
 
 @media (min-width: $tablet-width) {
@@ -387,7 +437,7 @@
 
   .form__name-list {
     grid-column: 2/3;
-    margin-top: -55px;
+    margin-top: -54px;
     margin-left: -13px;
   }
 
@@ -452,6 +502,16 @@
 
       width: 375px;
     }
+  }
+
+  .form__name-item:nth-child(1) .form__enter {
+    width: 407px;
+  }
+
+  .form__name-list .form__enter {
+    margin-left: 2px;
+    padding-left: 18px;
+    width: 355px;
   }
 
   .form__square {
@@ -522,6 +582,18 @@
     padding-left: 31px;
     padding-right: 29px;
     margin-top: 22px;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      background: $button-hover;
+      color: $white;
+    }
+
+    &:active {
+      background: $button-hover;
+      color: $button-active;
+    }
   }
 }
 
@@ -595,15 +667,61 @@
     top: -19px;
   }
 
+  // .form__square,
+  // .form__image {
+  //   &:hover,
+  //   &:focus {
+  //     border-color: $green-light;
+  //   }
+
+  //   &:active {
+  //     border-color: $span-active;
+  //   }
+  // }
+
+  // input:hover,
+  // input:focus {
+  //   .form__square,
+  //   .form__image {
+  //     border-color: $green-light;
+  //   }
+  // }
+
+  // label:active {
+  //   .form__square,
+  //   .form__image {
+  //     border-color: $span-active;
+  //   }
+  // }
+
+  .form__input:hover + .form__span,
+  .form__input:focus + .form__span {
+    border-color: $green-light;
+  }
+
+  .form__input:active + .form__span {
+    border-color: $span-active;
+  }
+
   .form__name-list {
-    margin-top: -54px;
+    margin-top: -53px;
     margin-left: -34px;
     width: 710px;
   }
 
+  .form__name-list .form__enter {
+    margin-left: -2px;
+  }
+
+  .form__fieldset-wrapper:nth-child(1) {
+    .form__enter {
+      width: 607px;
+    }
+  }
+
   .form__fieldset-wrapper:nth-child(3) {
     .form__enter {
-      width: 564px;
+      width: 556px;
     }
   }
 
@@ -653,5 +771,20 @@
   .form__required {
     margin-left: 168px;
     margin-top: 33px;
+  }
+
+  .form__enter-contacts:hover,
+  .form__enter-contacts:focus {
+    box-shadow: 0 2px 0 0 $green;
+  }
+
+  .form__enter-contacts:active {
+    box-shadow: 0 2px 0 0 $green;
+  }
+
+  .form__enter-contacts:hover + svg,
+  .form__enter-contacts:focus + svg {
+    fill: $green;
+    opacity: 1;
   }
 }
