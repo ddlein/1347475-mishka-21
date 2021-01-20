@@ -21,17 +21,6 @@
   font-weight: 700;
   line-height: 24px;
   color: $black;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 77px;
-  //   right: 0;
-
-  //   width: 202px;
-  //   height: 1px;
-
-  //   background-color: $border-nav;
-  // }
 }
 
 .catalog__item:last-child .catalog__item-title {
@@ -57,9 +46,11 @@
 }
 
 .catalog__item-detail {
+  position: relative;
+
   margin-top: 4px;
   margin-left: 28px;
-  position: relative;
+
   font-size: 13px;
   line-height: 30px;
   color: $grey-text;
@@ -80,9 +71,9 @@
 .catalog__price {
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
-  width: 233px;
   align-items: center;
+  width: 233px;
+  margin-top: 42px;
 }
 
 .catalog__item-cost {
@@ -145,12 +136,6 @@
     margin-left: 33px;
 
     font-size: 20px;
-    // &::after {
-    //   top: 233px;
-    //   left: 0;
-
-    //   width: 268px;
-    // }
   }
 
   .catalog__item-detail {
@@ -164,6 +149,7 @@
     &::after {
       top: 201px;
       right: 31px;
+
       width: 269px;
     }
   }
@@ -176,7 +162,6 @@
 
   .catalog__item-cost {
     grid-column: 2/3;
-    // margin-top: 16px;
     margin-left: 0;
 
     font-size: 17px;
@@ -213,21 +198,15 @@
     grid-auto-flow: row;
   }
 
-  .catalog__item-busket {
-    &:hover,
-    &:focus {
-      .catalog__busket-icon {
-        fill: $green;
-        opacity: 1;
-      }
-    }
+  .catalog__item-busket:hover .catalog__busket-icon,
+  .catalog__item-busket:focus .catalog__busket-icon {
+    opacity: 1;
 
-    &:active {
-      .catalog__busket-icon {
-        // fill: $green;
-        opacity: 0.3;
-      }
-    }
+    fill: $green;
+  }
+
+  .catalog__item-busket:active .catalog__busket-icon {
+    opacity: 0.3;
   }
 
   .catalog__item:last-child {
@@ -267,9 +246,10 @@
     margin-left: 26px;
 
     &::after {
-      width: 255px;
       top: 67px;
       right: 34px;
+
+      width: 255px;
     }
   }
 
@@ -284,8 +264,6 @@
   .catalog__item-cost {
     grid-row: 4/5;
     grid-column: 1/2;
-    // margin-top: 37px;
-    // margin-left: 27px;
   }
 
   .catalog__item:nth-child(2) .catalog__item-detail {

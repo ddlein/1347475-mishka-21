@@ -1,8 +1,9 @@
 .process-making {
   width: $mobile-wrapper;
   margin: auto;
-  padding-bottom: 32px;
   margin-bottom: 57px;
+  padding-bottom: 32px;
+
   border: 1px solid $border-nav;
 
   &:hover,
@@ -52,18 +53,21 @@
 }
 
 .process-making__video-icon {
+  position: relative;
+  bottom: 35px;
+  left: 33px;
+
   width: 32px;
   height: 22px;
+
   fill: $green;
-  position: relative;
-  left: 33px;
-  bottom: 35px;
 }
 
 .process-making__play-icon {
   position: absolute;
-  left: 79px;
   top: 39px;
+  left: 79px;
+
   cursor: pointer;
 }
 
@@ -73,14 +77,15 @@
   }
 
   .process-making__title {
+    position: relative;
+    top: 433px;
+
     grid-row: 2/3;
     width: 252px;
     margin-top: 39px;
     margin-left: 107px;
 
     font-size: 20px;
-    position: relative;
-    top: 433px;
   }
 
   .process-making__text {
@@ -109,13 +114,15 @@
 
     &:hover,
     &:focus {
-      background: $button-hover;
       color: $white;
+
+      background: $button-hover;
     }
 
     &:active {
-      background: $button-hover;
       color: $button-active;
+
+      background: $button-hover;
     }
   }
 
@@ -130,8 +137,8 @@
   }
 
   .process-making__play-icon {
-    left: 284px;
     top: 190px;
+    left: 284px;
 
     &:hover,
     &:focus {
@@ -165,8 +172,8 @@
   .process-making__video {
     grid-row: 1/-1;
     height: 325px;
-    margin-right: 0;
     margin-top: 0;
+    margin-right: 0;
   }
 
   .process-making__wrapper img {
@@ -177,6 +184,10 @@
   }
 
   .process-making__button {
+    position: relative;
+    top: 10px;
+    left: 684px;
+
     width: 230px;
     margin-top: 9px;
     margin-bottom: 58px;
@@ -185,18 +196,16 @@
     padding-left: 0;
 
     text-align: center;
-    position: relative;
-    left: 684px;
-    top: 10px;
   }
 
   .process-making__title {
+    top: 0;
+
     grid-row: 1/2;
     grid-column: 2/3;
     width: 228px;
     margin-top: 98px;
     margin-left: 79px;
-    top: 0;
   }
 
   .process-making__text {
@@ -212,7 +221,8 @@
   }
 
   .process-making__play-icon {
-    width: 100px;
     left: 293px;
+
+    width: 100px;
   }
 }

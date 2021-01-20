@@ -1,19 +1,17 @@
 .popup {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
 
-  width: 100%;
-  height: 100vh;
-
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-
+  display: none;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .popup--open {
@@ -21,36 +19,20 @@
 }
 
 fieldset {
-  border: none;
   padding: 0;
+
+  border: none;
 }
 
-// .popup--show {
-//   visibility: visible;
-//   opacity: 1;
-
-//   // &::after {
-//   //   content: "";
-//   //   position: absolute;
-//   //   top: 361px;
-//   //   width: 100%;
-//   //   height: 1px;
-//   //   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-//   // }
-// }
-
-// .popup--show {
-//   display: block;
-// }
-
 .popup__wrapper {
-  width: 100%;
-  // height: 200px;
-  background-color: $white;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  border: 2px solid $border-nav;
   position: relative;
   z-index: 15;
+
+  width: 100%;
+
+  background-color: $white;
+  border: 2px solid $border-nav;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .popup__overlay {
@@ -67,7 +49,7 @@ fieldset {
 
 .popup__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 29px;
 
   font-weight: 700;
@@ -78,15 +60,17 @@ fieldset {
 }
 
 .popup__label {
-  font-weight: 700;
   display: inline-block;
-  font-size: 17px;
-  line-height: 16px;
-  border: 1px solid $border-nav;
+  box-sizing: border-box;
   width: 100%;
   padding: 17px;
-  box-sizing: border-box;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
   text-align: center;
+
+  border: 1px solid $border-nav;
   cursor: pointer;
 
   &:hover,
@@ -101,11 +85,11 @@ fieldset {
 
 .popup__legend {
   margin: auto;
-  // margin-left: 75px;
 
   font-size: 15px;
   line-height: 30px;
 }
+
 
 @media (max-width: $mobile-width-only) {
   .popup form {
@@ -115,30 +99,34 @@ fieldset {
 }
 
 .popup__form {
+  box-sizing: border-box;
   width: 320px;
   margin: auto;
+  padding: 21px;
+  padding-top: 0;
+  padding-bottom: 50px;
+
+  text-align: center;
 
   border: none;
-  padding: 21px;
-  box-sizing: border-box;
-  text-align: center;
 }
 
 .popup__list {
   display: flex;
   flex-direction: row;
-  // justify-content: space-around;
-  margin: 0;
-  margin-top: 31px;
-  margin-bottom: 40px;
-  padding: 0;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 26px;
+  padding: 0;
+
   list-style: none;
 }
 
 .popup__item {
   position: relative;
+
   width: 82px;
   margin-right: 10px;
 }
@@ -167,13 +155,8 @@ fieldset {
   border: 2px solid $border-nav;
 }
 
-// .popup__input:checked + .popup__border {
-//   border: 2px solid $green;
-// }
 
 .popup__button {
-  // margin-left: 12px;
-
   color: $white;
 
   background-color: $logo;
@@ -225,26 +208,24 @@ fieldset {
   }
 
   .popup__legend {
-    // margin-left: 173px;
-
     font-size: 17px;
     line-height: 30px;
   }
 
   .popup__list {
-    margin-top: 30px;
-    margin-bottom: 67px;
-    // margin-left: 114px;
+    margin-top: 1px;
+    margin-bottom: 44px;
   }
 
   .popup__item {
-    // margin-right: 95px;
     width: 112px;
   }
 
   .popup__form {
     width: 500px;
     padding: 70px;
+    padding-top: 1px;
+    padding-bottom: 44px;
   }
 
   .popup__border {
@@ -258,7 +239,6 @@ fieldset {
   }
 
   .popup__button {
-    // margin-left: 75px;
     padding-top: 15px;
     padding-right: 128px;
     padding-bottom: 12px;

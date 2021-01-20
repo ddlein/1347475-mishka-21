@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+
 </head>
 
 <body class="page__body">
@@ -60,8 +63,8 @@
   </svg>
 
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--no-js">
+  <header>
+    <nav class="main-nav main-nav--closed main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
           <picture>
@@ -322,21 +325,18 @@
             <li class="popup__item">
               <input class="popup__input" type="radio" id="s" name="choose-size" value="size" checked>
               <label class="popup__label" for="s">
-                <!-- <span class="popup__border"></span> -->
                 S
               </label>
             </li>
             <li class="popup__item">
               <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
               <label class="popup__label" for="m">
-                <!-- <span class="popup__border"></span> -->
                 M
               </label>
             </li>
             <li class="popup__item">
               <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
               <label class="popup__label" for="l">
-                <!-- <span class="popup__border"></span> -->
                 L
               </label>
             </li>

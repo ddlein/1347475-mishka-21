@@ -1,36 +1,32 @@
 .copyright__text {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 18px;
   margin-top: 7px;
+
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
 }
 
 .copyright__link {
   position: relative;
   top: -8px;
-  color: $black;
+
   display: flex;
   justify-content: space-around;
-  margin: auto;
   width: 206px;
+  margin: auto;
   padding-bottom: 12px;
+
+  color: $black;
 }
 
 .copyright__academy-logo {
   fill: $logo;
 }
 
-// @media (min-width: $tablet-width) {
-//   .copyright__link {
-//     left: -4px;
-//     top: -6px;
-//   }
-// }
-
 @media (min-width: $tablet-width) {
   .copyright__link {
-    left: -4px;
     top: -6px;
+    left: -4px;
 
     &:hover,
     &:focus {

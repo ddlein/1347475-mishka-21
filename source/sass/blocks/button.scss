@@ -1,26 +1,29 @@
 .button {
-  text-transform: uppercase;
   display: inline-block;
-  border: 2px solid $grey-text;
-  font-weight: bold;
-  line-height: 20px;
-  font-size: 18px;
-  color: $grey-text;
-  font-family: inherit;
   margin-top: 7px;
   margin-left: 0;
-  padding-left: 80px;
-  padding-right: 81px;
   padding-top: 15px;
+  padding-right: 81px;
   padding-bottom: 14px;
+  padding-left: 80px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: inherit;
+  color: $grey-text;
+  text-transform: uppercase;
+
+  border: 2px solid $grey-text;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
     margin-top: -15px;
-    padding-left: 99px;
-    padding-right: 100px;
     margin-bottom: 0;
+    padding-right: 100px;
     padding-bottom: 13px;
+    padding-left: 99px;
+
+    font-size: 17px;
   }
 }
 

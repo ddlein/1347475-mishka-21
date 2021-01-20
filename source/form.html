@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -75,8 +77,8 @@
   </svg>
 
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--no-js">
+  <header>
+    <nav class="main-nav main-nav--closed main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html">
           <picture>
@@ -247,7 +249,7 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">Тел</legend>
               <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-              <input class="form__enter form__enter-contacts" type="tel" name="tel" id="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+              <input class="form__enter form__enter-contacts" type="tel" name="tel" id="tel" pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}"
                 placeholder="+7 XXX XXX XX XX*" required>
               <svg class="form__phone-logo" width="21" height="22">
                 <use xlink:href="#phone"></use>

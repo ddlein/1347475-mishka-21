@@ -87,10 +87,6 @@
   right: 22px;
 
   opacity: 0.2;
-
-  // &:hover {
-  //   fill: $green-light;
-  // }
 }
 
 .main-nav__link:hover .main-nav__search-icon,
@@ -178,11 +174,8 @@
   .main-nav__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: space-between;
     width: 668px;
-    // display: flex;
     margin: auto;
-    // align-items: center;
   }
 
   .main-nav__logo {
@@ -192,7 +185,6 @@
   .main-nav__logo-img {
     width: 112px;
     margin-top: -15px;
-    // margin-right: 180px;
   }
 
   .main-nav__toggle {
@@ -333,15 +325,12 @@
     top: -14px;
 
     display: flex;
-    // justify-content: space-between;
     order: 1;
     width: 376px;
     margin-top: -21px;
 
     &:not(.main-nav__list--new)::before {
       top: 81px;
-      // left: -49px;
-
       width: $desktop-width;
     }
   }
@@ -383,7 +372,6 @@
     top: -26px;
 
     display: flex;
-    // justify-content: space-between;
     order: 4;
     width: 330px;
     margin-top: -1px;
