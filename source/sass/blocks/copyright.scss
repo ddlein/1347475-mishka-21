@@ -2,20 +2,35 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
+  margin-top: 7px;
 }
 
 .copyright__link {
   position: relative;
   top: -8px;
+  color: $black;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 206px;
+  padding-bottom: 12px;
 }
 
 .copyright__academy-logo {
   fill: $logo;
 }
 
+// @media (min-width: $tablet-width) {
+//   .copyright__link {
+//     left: -4px;
+//     top: -6px;
+//   }
+// }
+
 @media (min-width: $tablet-width) {
   .copyright__link {
-    left: 9px;
+    left: -4px;
+    top: -6px;
 
     &:hover,
     &:focus {

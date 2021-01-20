@@ -337,6 +337,10 @@
   opacity: 1;
 }
 
+.form__input {
+  cursor: pointer;
+}
+
 .form__input:hover + .form__span,
 .form__input:focus + .form__span {
   border-color: $green-light;
