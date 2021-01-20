@@ -53,6 +53,7 @@ let buttons = document.querySelectorAll('.popup-open');
 let popup = document.querySelector('.popup');
 let popupWrap = document.querySelector('.popup__wrapper');
 let popupOverlay = document.querySelector('.popup__overlay');
+let popupButton = document.querySelector('.popup__button');
 
 buttons.forEach((element) => {
   element.addEventListener('click', () => {
@@ -62,8 +63,14 @@ buttons.forEach((element) => {
 })
 
 window.addEventListener('click', (evt) => {
-  if(evt.target.classList.contains('popup__overlay')) {
+  if (evt.target.classList.contains('popup__overlay')) {
     popup.classList.remove('popup--open');
     document.body.style.overflow = 'visible';
   }
+})
+
+popupButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  popup.classList.remove('popup--open');
+  document.body.style.overflow = 'visible';
 })

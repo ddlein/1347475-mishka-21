@@ -253,26 +253,28 @@
   <section class="popup">
     <div class="popup__wrapper">
       <h2 class="popup__title">Добавить<br class="popup__br"> в корзину</h2>
-      <form action="#" method="get">
-        <fieldset class="popup__form">
+      <form class="popup__form" action="#" method="get">
+        <fieldset>
           <legend class="popup__legend">Выберите размер:</legend>
           <ul class="popup__list">
             <li class="popup__item">
+              <input class="popup__input" type="radio" id="s" name="choose-size" value="size" checked>
               <label class="popup__label" for="s">
-                <input class="popup__input" type="radio" id="s" name="choose-size" value="size" checked>
-                <span class="popup__border"></span>
+                <!-- <span class="popup__border"></span> -->
                 S
               </label>
             </li>
-            <li class="popup__item"><label class="popup__label" for="m">
-                <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
-                <span class="popup__border"></span>
+            <li class="popup__item">
+              <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
+              <label class="popup__label" for="m">
+                <!-- <span class="popup__border"></span> -->
                 M
               </label>
             </li>
-            <li class="popup__item"><label class="popup__label" for="l">
-                <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
-                <span class="popup__border"></span>
+            <li class="popup__item">
+              <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
+              <label class="popup__label" for="l">
+                <!-- <span class="popup__border"></span> -->
                 L
               </label>
             </li>

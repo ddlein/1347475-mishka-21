@@ -20,6 +20,11 @@
   display: flex;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+}
+
 // .popup--show {
 //   visibility: visible;
 //   opacity: 1;
@@ -43,7 +48,7 @@
   // height: 200px;
   background-color: $white;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  border: 1px solid $border-nav;
+  border: 2px solid $border-nav;
   position: relative;
   z-index: 15;
 }
@@ -82,11 +87,21 @@
   padding: 17px;
   box-sizing: border-box;
   text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $popup-hover;
+  }
+
+  &:active {
+    border-color: $popup-active;
+  }
 }
 
 .popup__legend {
   margin: auto;
-  margin-left: 75px;
+  // margin-left: 75px;
 
   font-size: 15px;
   line-height: 30px;
@@ -104,6 +119,9 @@
   margin: auto;
 
   border: none;
+  padding: 21px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .popup__list {
@@ -113,9 +131,9 @@
   margin: 0;
   margin-top: 31px;
   margin-bottom: 40px;
-  margin-left: 39px;
   padding: 0;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -123,6 +141,10 @@
   position: relative;
   width: 82px;
   margin-right: 10px;
+}
+
+.popup__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .popup__item input {
@@ -145,17 +167,32 @@
   border: 2px solid $border-nav;
 }
 
-.popup__input:checked + .popup__border {
-  border: 2px solid $green;
-}
+// .popup__input:checked + .popup__border {
+//   border: 2px solid $green;
+// }
 
 .popup__button {
-  margin-left: 12px;
+  // margin-left: 12px;
 
   color: $white;
 
   background-color: $logo;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+
+.popup__input:checked + .popup__label {
+  border-color: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -188,7 +225,7 @@
   }
 
   .popup__legend {
-    margin-left: 173px;
+    // margin-left: 173px;
 
     font-size: 17px;
     line-height: 30px;
@@ -197,15 +234,17 @@
   .popup__list {
     margin-top: 30px;
     margin-bottom: 67px;
-    margin-left: 114px;
+    // margin-left: 114px;
   }
 
   .popup__item {
-    margin-right: 95px;
+    // margin-right: 95px;
+    width: 112px;
   }
 
   .popup__form {
     width: 500px;
+    padding: 70px;
   }
 
   .popup__border {
@@ -219,7 +258,7 @@
   }
 
   .popup__button {
-    margin-left: 75px;
+    // margin-left: 75px;
     padding-top: 15px;
     padding-right: 128px;
     padding-bottom: 12px;
