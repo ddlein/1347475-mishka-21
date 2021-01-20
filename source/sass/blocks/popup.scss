@@ -74,8 +74,14 @@
 
 .popup__label {
   font-weight: 700;
+  display: inline-block;
   font-size: 17px;
   line-height: 16px;
+  border: 1px solid $border-nav;
+  width: 100%;
+  padding: 17px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .popup__legend {
@@ -115,8 +121,8 @@
 
 .popup__item {
   position: relative;
-
-  margin-right: 64px;
+  width: 82px;
+  margin-right: 10px;
 }
 
 .popup__item input {
@@ -163,7 +169,7 @@
 
   .popup__wrapper {
     width: 566px;
-    height: 336px;
+    min-height: 336px;
 
     border: 1px solid $border-nav;
     box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);

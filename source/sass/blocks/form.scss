@@ -350,6 +350,20 @@
   border-color: $span-active;
 }
 
+.form__input:disabled + .form__span,
+.form__input:disabled:checked + .form__span,
+.form__input:disabled:hover + .form__span,
+.form__input:disabled:checked:hover + .form__span {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: $black;
+}
+
+// .form__input:disabled:hover + .form__span,
+// .form__input:disabled:checked + .form__span {
+//   border-color: $black;
+// }
+
 @media (min-width: $tablet-width) {
   .form {
     width: 100%;
@@ -603,7 +617,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: -57px;
+    margin-bottom: -61px;
   }
 
   .form__fieldset {
@@ -717,16 +731,16 @@
     margin-left: -2px;
   }
 
-  .form__fieldset-wrapper:nth-child(1) {
-    .form__enter {
-      width: 607px;
-    }
+  .form__fieldset-wrapper:nth-child(1) .form__enter {
+    width: 607px;
   }
 
-  .form__fieldset-wrapper:nth-child(3) {
-    .form__enter {
-      width: 556px;
-    }
+  .form__fieldset-wrapper:nth-child(3) .form__enter {
+    width: 556px;
+  }
+
+  .form__name-item:nth-child(1) .form__enter {
+    width: 607px;
   }
 
   .form__name-list .form__name-item:nth-child(1)::after {
