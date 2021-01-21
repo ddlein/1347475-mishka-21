@@ -68,7 +68,7 @@
   </svg>
 
   <header>
-    <nav class="main-nav main-nav--closed main-nav--no-js">
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html">
           <picture>
@@ -78,8 +78,9 @@
               height="35" alt="Логотип Mishka">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
-            class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <a class="main-nav__link" href="#">
           <svg class="main-nav__search-icon" width="18" height="18">
             <use xlink:href="#search-icon"></use>
@@ -130,7 +131,7 @@
           <p class="catalog__item-detail">Рост 30 см, вес 200 г</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 200 руб.</span>
-            <a class="catalog__item-busket popup-open" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -159,7 +160,7 @@
           <p class="catalog__item-detail">Диаметр 15 см, высота 10 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">690 руб.</span>
-            <a class="catalog__item-busket popup-open" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -187,7 +188,7 @@
           <p class="catalog__item-detail">Диаметр 30 см, высота 30 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 500 руб.</span>
-            <a class="catalog__item-busket popup-open" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -212,7 +213,7 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео">
             </picture>
-            <svg class="process-making__play-icon" width="100" height="77">
+            <svg class="process-making__play-icon" width="100" height="77" aria-label="Воспроизвести">
               <use xlink:href="#play-button"></use>
             </svg>
           </div>
@@ -238,21 +239,22 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/">
+            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/htmlacademy/"
+              aria-label="Instagram">
               <svg class="social__insta-logo" width="22" height="21">
                 <use xlink:href="#insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.instagram.com">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
               <svg class="social__fb-logo" width="15" height="28">
                 <use xlink:href="#fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.twitter.com/" aria-label="Twitter">
               <svg class="social__twitter-logo" width="23" height="20">
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -261,7 +263,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Кем разработано">
           <b class="copyright__text">Разработано</b>
           <svg class="copyright__academy-logo" width="27" height="34">
             <use xlink:href="#academy-logo"></use>

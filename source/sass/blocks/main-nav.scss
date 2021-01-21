@@ -134,7 +134,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--opened .main-nav__wrapper::before {
+  .main-nav--opened .main-nav__wrapper::before,
+  .main-nav--no-js .main-nav__wrapper::before {
     content: "";
     position: absolute;
     top: 77px;

@@ -3,6 +3,7 @@
   margin-top: 90px;
 }
 
+
 .contacts__title {
   width: $mobile-wrapper;
   margin: auto;
@@ -74,6 +75,7 @@
 .contacts__maps {
   position: relative;
   top: 64px;
+  height: 455px;
 }
 
 .contacts__maps iframe {
@@ -88,13 +90,15 @@
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100%;
+  max-height: 100%;
 }
 
 .contacts__write {
   display: block;
   width: 160px;
   margin: auto;
-  margin-top: 102px;
+  margin-top: 105px;
   padding-right: 46px;
   padding-left: 47px;
 }
@@ -165,7 +169,7 @@
   }
 
   .contacts__write {
-    margin-top: 98px;
+    margin-top: 106px;
     padding-right: 27px;
     padding-left: 35px;
 
@@ -214,8 +218,9 @@
 
   .contacts__maps img {
     position: absolute;
-    left: 57px;
+    left: 0;
     z-index: -1;
+    width: 527px;
   }
 
   .contacts__title {
@@ -242,7 +247,7 @@
 
   .contacts__write {
     justify-self: center;
-    margin-top: -28px;
+    margin-top: -23px;
     margin-left: 177px;
   }
 

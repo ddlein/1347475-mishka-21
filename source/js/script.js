@@ -1,7 +1,9 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
+let navClosed = document.querySelector('.main-nav--closed');
 
 navMain.classList.remove('main-nav--no-js');
+navMain.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
