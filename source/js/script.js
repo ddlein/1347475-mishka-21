@@ -23,7 +23,8 @@ if (popup != null) {
   let popupButton = document.querySelector('.popup__button');
 
   buttons.forEach((element) => {
-    element.addEventListener('click', () => {
+    element.addEventListener('click', (evt) => {
+      evt.preventDefault()
       popup.classList.add('popup--open');
       document.body.style.overflow = 'hidden';
     })
