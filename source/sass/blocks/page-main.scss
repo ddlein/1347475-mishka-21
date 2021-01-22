@@ -61,7 +61,6 @@
 .page-main__nav-item:nth-child(1) {
   position: relative;
 
-  padding-bottom: 20px;
 
   background-color: $green;
 
@@ -84,6 +83,7 @@
 .page-main__nav-item:nth-child(1) .page-main__nav-link {
   padding-top: 26px;
   padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 .page-main__nav-item:nth-child(2) {
