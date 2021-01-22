@@ -1,15 +1,13 @@
 .item-of-day {
-  // width: $mobile-wrapper;
-  margin: auto;
   position: relative;
+
+  margin: auto;
   margin-bottom: 74px;
 
   &::after {
     content: "";
     position: absolute;
-    // top: 25px;
     bottom: -42px;
-    // right: -20px;
 
     display: inline-block;
     width: 100%;
@@ -96,14 +94,12 @@
 
 @media (min-width: $tablet-width) {
   .item-of-day {
-    // width: $tablet-wrapper;
     margin: auto;
     margin-bottom: 122px;
 
     &::after {
-      // left: -51px;
       bottom: -66px;
-      // width: 768px;
+
       height: 17px;
 
       background-image: url("../img/zigzag-line-tablet.svg");
@@ -120,9 +116,8 @@
     display: grid;
     grid-template-rows: min-content 1fr 1fr;
     grid-template-columns: 1fr 1fr 110px;
-    // width: $tablet-wrapper;
-    margin: auto;
     width: $tablet-wrapper;
+    margin: auto;
   }
 
   .item-of-day__title {
@@ -164,9 +159,23 @@
   .item-of-day__wrapper img {
     width: 334px;
     height: 404px;
-    // grid-column: 2/4;
-    // grid-row: 2/-1;
-    // justify-self: end;
+  }
+
+  .item-of-day__button {
+    z-index: 10;
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      background: $button-hover;
+    }
+
+    &:active {
+      color: $button-active;
+
+      background: $button-hover;
+    }
   }
 
   .item-of-day__wrapper > .item-of-day__button {
@@ -177,7 +186,6 @@
   .item-of-day__price {
     margin-top: -71px;
     margin-left: 71px;
-    // justify-self: center;
 
     font-size: 20px;
   }
@@ -186,7 +194,6 @@
 @media (min-width: $desktop-width) {
   .item-of-day {
     width: $desktop-wrapper;
-    // margin-left: 39px;
     margin-top: 152px;
     margin-bottom: 163px;
 
@@ -242,7 +249,6 @@
   }
 
   .item-of-day__wrapper img {
-    // grid-row: 1/-1;
     width: 528px;
     height: 636px;
     margin-top: -82px;

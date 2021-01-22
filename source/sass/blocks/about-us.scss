@@ -37,6 +37,8 @@
 }
 
 .about-us__item:nth-child(1) {
+  order: 1;
+
   &::before {
     bottom: 81px;
     left: 14px;
@@ -49,6 +51,8 @@
 }
 
 .about-us__item:nth-child(2) {
+  order: 3;
+
   &::before {
     bottom: 91px;
     left: 6px;
@@ -61,6 +65,8 @@
 }
 
 .about-us__item:nth-child(3) {
+  order: 5;
+
   &::before {
     bottom: 86px;
     left: 13px;
@@ -73,6 +79,8 @@
 }
 
 .about-us__item:nth-child(4) {
+  order: 2;
+
   &::before {
     bottom: 82px;
     left: 8px;
@@ -85,6 +93,8 @@
 }
 
 .about-us__item:nth-child(5) {
+  order: 4;
+
   &::before {
     bottom: 92px;
     left: 0;
@@ -97,6 +107,8 @@
 }
 
 .about-us__item:nth-child(6) {
+  order: 6;
+
   &::before {
     bottom: 85px;
     left: 9px;
@@ -141,7 +153,7 @@
 
     column-gap: 5px;
 
-    grid-auto-flow: column;
+    // grid-auto-flow: column;
   }
 }
 

@@ -1,9 +1,34 @@
-.social__list {
-  list-style: none;
-  // margin: 0;
-  // padding: 0;
-}
-
 .social__item {
   margin-bottom: 10px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  width: 183px;
+  margin: auto;
+  padding: 0;
+  padding-top: 28px;
+
+  list-style: none;
+}
+
+.social__logo:hover .social__logo-footer,
+.social__logo:focus .social__logo-footer {
+  fill: $mail-hover;
+}
+
+.social__logo:active {
+  .social__logo-footer {
+    opacity: 0.3;
+  }
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: $mail-hover;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }

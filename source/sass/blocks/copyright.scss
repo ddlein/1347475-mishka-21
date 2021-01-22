@@ -1,12 +1,22 @@
 .copyright__text {
-  font-size: 19px;
+  margin-top: 7px;
+
   font-weight: bold;
+  font-size: 19px;
   line-height: 18px;
 }
 
 .copyright__link {
   position: relative;
   top: -8px;
+
+  display: flex;
+  justify-content: space-around;
+  width: 206px;
+  margin: auto;
+  padding-bottom: 12px;
+
+  color: $black;
 }
 
 .copyright__academy-logo {
@@ -15,6 +25,16 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
-    left: 9px;
+    top: -6px;
+    left: -4px;
+
+    &:hover,
+    &:focus {
+      fill: $mail-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

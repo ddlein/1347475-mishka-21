@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка: Каталог товаров</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
-  <!-- TODO убрать лишние свг везде -->
   <svg style="display: none;">
     <symbol viewBox="0 0 18 18" id="search-icon" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -66,8 +67,8 @@
     </symbol>
   </svg>
 
-  <header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--no-js">
+  <header>
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html">
           <picture>
@@ -77,8 +78,9 @@
               height="35" alt="Логотип Mishka">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close-open" type="button"><span
-            class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <a class="main-nav__link" href="#">
           <svg class="main-nav__search-icon" width="18" height="18">
             <use xlink:href="#search-icon"></use>
@@ -116,6 +118,10 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/rabbit-desktop.webp 1x, img/rabbit-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rabbit-tablet.webp 1x, img/rabbit-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rabbit-mobile.webp" srcset="img/rabbit-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
               <img src="img/rabbit-mobile.jpg" srcset="img/rabbit-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -125,7 +131,7 @@
           <p class="catalog__item-detail">Рост 30 см, вес 200 г</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 200 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -136,6 +142,12 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
+              <source media="(min-width: 1150px)" type="image/webp"
+                srcset="img/laundry-basket-desktop.webp 1x, img/laundry-basket-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/laundry-basket-tablet.webp 1x, img/laundry-basket-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/laundry-basket-mobile.webp" srcset="img/laundry-basket-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)"
                 srcset="img/laundry-basket-desktop.jpg 1x, img/laundry-basket-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -148,7 +160,7 @@
           <p class="catalog__item-detail">Диаметр 15 см, высота 10 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">690 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -158,6 +170,12 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/basket-for-toys-desktop.webp 1x, img/basket-for-toys-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/basket-for-toys-tablet.webp 1x, img/basket-for-toys-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/basket-for-toys-mobile.webp" srcset="img/basket-for-toys-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)"
                 srcset="img/basket-for-toys-desktop.jpg 1x, img/basket-for-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -170,7 +188,7 @@
           <p class="catalog__item-detail">Диаметр 30 см, высота 30 см</p>
           <div class="catalog__price">
             <span class="catalog__item-cost">1 500 руб.</span>
-            <a class="catalog__item-busket" href="#">
+            <a class="catalog__item-busket popup-open" href="#" aria-label="Добавить в корзину">
               <svg class="catalog__busket-icon" width="21" height="18">
                 <use xlink:href="#busket-icon"></use>
               </svg>
@@ -187,11 +205,15 @@
           </svg>
           <div class="process-making__video">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile.webp" srcset="img/video-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео">
+              <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
             </picture>
-            <svg class="process-making__play-icon" width="100" height="77">
+            <svg class="process-making__play-icon" width="100" height="77" aria-label="Воспроизвести">
               <use xlink:href="#play-button"></use>
             </svg>
           </div>
@@ -208,28 +230,31 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__img-wrapper">
-        <svg class="social__logo-footer" width="102" height="34">
-          <use xlink:href="#logo-footer"></use>
-        </svg>
+        <a class="social__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Академия">
+          <svg class="social__logo-footer" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/htmlacademy/"
+              aria-label="Instagram">
               <svg class="social__insta-logo" width="22" height="21">
                 <use xlink:href="#insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
               <svg class="social__fb-logo" width="15" height="28">
                 <use xlink:href="#fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.twitter.com/" aria-label="Twitter">
               <svg class="social__twitter-logo" width="23" height="20">
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -238,8 +263,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Кем разработано">
+          <b class="copyright__text">Разработано</b>
           <svg class="copyright__academy-logo" width="27" height="34">
             <use xlink:href="#academy-logo"></use>
           </svg>
@@ -248,23 +273,40 @@
     </div>
   </footer>
 
-  <script>
-    let navMain = document.querySelector('.main-nav');
-    let navToggle = document.querySelector('.main-nav__toggle');
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Добавить<br class="popup__br"> в корзину</h2>
+      <form class="popup__form" action="#" method="get">
+        <fieldset>
+          <legend class="popup__legend">Выберите размер:</legend>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <input class="popup__input" type="radio" id="s" name="choose-size" value="size" checked>
+              <label class="popup__label" for="s">
+                S
+              </label>
+            </li>
+            <li class="popup__item">
+              <input class="popup__input" type="radio" id="m" name="choose-size" value="size">
+              <label class="popup__label" for="m">
+                M
+              </label>
+            </li>
+            <li class="popup__item">
+              <input class="popup__input" type="radio" id="l" name="choose-size" value="size">
+              <label class="popup__label" for="l">
+                L
+              </label>
+            </li>
+          </ul>
+          <button class="popup__button button">Добавить</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="popup__overlay"></div>
+  </section>
 
-    navMain.classList.remove('main-nav--no-js');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

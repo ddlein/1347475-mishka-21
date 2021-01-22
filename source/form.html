@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -57,20 +59,17 @@
         fill="#62D1BA" />
     </symbol>
     <symbol viewBox="0 0 32 21" id="mail" xmlns="http://www.w3.org/2000/svg">
-      <path opacity="0.2"
+      <path opacity="1"
         d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
     </symbol>
     <symbol viewBox="0 0 25 24" id="phone" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.2">
+      <g opacity="1">
         <path
-          d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"
-          fill="black" />
+          d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z" />
         <path
-          d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z"
-          fill="black" />
+          d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z" />
         <path
-          d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"
-          fill="black" />
+          d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z" />
         <path
           d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z" />
       </g>
@@ -78,8 +77,8 @@
   </svg>
 
   <h1 class="visually-hidden">Магазин вязаных изделий Мишка</h1>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--no-js">
+  <header>
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html">
           <picture>
@@ -141,20 +140,16 @@
 
                 <li class="form__radio-item">
                   <label class="form__radio-text" for="accessories-check">
-                    <input class="form__radio-button" type="radio" name="choose-type" value="accessories"
-                      id="accessories-check" checked>
-                    <span class="form__image">
-                    </span>
+                    <input class="form__radio-button form__input" type="radio" name="choose-type" value="accessories" id="accessories-check" checked>
+                    <span class="form__image form__span"></span>
                     Аксессуар для интерьера
                   </label>
                 </li>
                 <li class="form__radio-item">
 
                   <label class="form__radio-text" for="child-toy-check">
-                    <input class="form__radio-button" type="radio" name="choose-type" value="child-toy"
-                      id="child-toy-check">
-                    <span class="form__image">
-                    </span>
+                    <input class="form__radio-button form__input" type="radio" name="choose-type" value="child-toy" id="child-toy-check">
+                    <span class="form__image form__span"></span>
                     Детская игрушка
                   </label>
                 </li>
@@ -170,54 +165,49 @@
 
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text" for="white-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="white"
-                      id="white-check" checked>
-                    <span class="form__square"></span>
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="white" id="white-check" checked>
+                    <span class="form__square form__span"></span>
                     Белый
                   </label>
                 </li>
                 <li class="form__checkbox-item">
 
                   <label class="form__checkbox-text" for="grey-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="grey"
-                      id="grey-check" checked>
-                    <span class="form__square"></span>
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="grey" id="grey-check" checked>
+                    <span class="form__square form__span"></span>
                     Серый
                   </label>
                 </li>
 
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text" for="tiffany-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="tiffany"
-                      id="tiffany-check">
-                    <span class="form__square"></span>
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="tiffany" id="tiffany-check">
+                    <span class="form__square form__span"></span>
                     «Тиффани»
                   </label>
                 </li>
 
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text" for="black-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="black"
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="black"
                       id="black-check">
-                    <span class="form__square"></span>
+                    <span class="form__square form__span"></span>
                     Черный
                   </label>
                 </li>
 
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text" for="pink-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="pink"
-                      id="pink-check">
-                    <span class="form__square"></span>
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="pink" id="pink-check">
+                    <span class="form__square form__span"></span>
                     Розовый
                   </label>
                 </li>
 
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text" for="orange-check">
-                    <input class="form__checkbox-button" type="checkbox" name="choose-color" value="orange"
-                      id="orange-check">
-                    <span class="form__square"></span>
+                    <input class="form__checkbox-button form__input" type="checkbox" name="choose-color" value="orange" id="orange-check">
+                    <span class="form__square form__span"></span>
                     Оранжевый
                   </label>
                 </li>
@@ -250,10 +240,10 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">Тел</legend>
               <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-              <input class="form__enter form__enter-contacts" type="tel" name="tel" id="tel"
-                placeholder="+7 XXX XXX XX XX*">
+              <input class="form__enter form__enter-contacts" type="tel" name="tel" id="tel" pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}"
+                placeholder="+7 XXX XXX XX XX*" required>
               <svg class="form__phone-logo" width="21" height="22">
-                <use xlink:href="#phone" ></use>
+                <use xlink:href="#phone"></use>
               </svg>
             </fieldset>
           </div>
@@ -262,8 +252,7 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">E-mail</legend>
               <label class="visually-hidden" for="email">Введите ваш E-mail</label>
-              <input class="form__enter form__enter-contacts" type="email" name="email" id="email"
-                placeholder="Ваш Email*">
+              <input class="form__enter form__enter-contacts" type="email" name="email" id="email" placeholder="Ваш Email*">
               <svg class="form__mail-logo" width="32" height="21">
                 <use xlink:href="#mail"></use>
               </svg>
@@ -290,28 +279,30 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__img-wrapper">
-        <svg class="social__logo-footer" width="102" height="34">
-          <use xlink:href="#logo-footer"></use>
-        </svg>
+        <a class="social__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Академия">
+          <svg class="social__logo-footer" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/htmlacademy/" aria-label="Instagram">
               <svg class="social__insta-logo" width="22" height="21">
                 <use xlink:href="#insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
               <svg class="social__fb-logo" width="15" height="28">
                 <use xlink:href="#fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.twitter.com/" aria-label="Twitter">
               <svg class="social__twitter-logo" width="23" height="20">
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -320,8 +311,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Кем разработано">
+          <b class="copyright__text">Разработано</b>
           <svg class="copyright__academy-logo" width="27" height="34">
             <use xlink:href="#academy-logo"></use>
           </svg>
@@ -330,23 +321,7 @@
     </div>
   </footer>
 
-  <script>
-    let navMain = document.querySelector('.main-nav');
-    let navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--no-js');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
