@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Леин](https://up.htmlacademy.ru/adaptive/21/user/1347475).
+* Студент: [Дмитрий Леин] (https://up.htmlacademy.ru/adaptive/21/user/1347475).
 * Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
